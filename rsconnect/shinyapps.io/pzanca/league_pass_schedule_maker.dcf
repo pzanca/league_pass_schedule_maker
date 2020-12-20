@@ -1,0 +1,12 @@
+name: league_pass_schedule_maker
+title: league_pass_schedule_maker
+username:
+account: pzanca
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3420565
+bundleId: 4012549
+url: https://pzanca.shinyapps.io/league_pass_schedule_maker/
+when: 1608492187.72155
+asMultiple: FALSE
+asStatic: FALSE

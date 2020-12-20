@@ -1,0 +1,603 @@
+GAME_ID,WEEKDAY,DATE,TIME,AWAY,HOME,LOCAL_TV_1,LOCAL_TV_2,NATL_TV
+1,7,2020-12-12,7:00 pm ET,Toronto Raptors,Charlotte Hornets,Fox Sports Southeast,SNN,NBA TV
+2,7,2020-12-12,7:00 pm ET,Indiana Pacers,Cleveland Cavaliers,Fox Sports Ohio,Fox Sports Indiana,NA
+3,7,2020-12-12,7:00 pm ET,Oklahoma City Thunder,San Antonio Spurs,Fox Sports Southwest,NA,NA
+4,7,2020-12-12,8:00 pm ET,Dallas Mavericks,Milwaukee Bucks,Fox Sports Wisconsin,Mavs.com,NA
+5,7,2020-12-12,8:00 pm ET,Memphis Grizzlies,Minnesota Timberwolves,Fox Sports North,Fox Sports Southeast,NA
+6,7,2020-12-12,8:30 pm ET,Denver Nuggets,Golden State Warriors,NBC Sports Bay Area,Altitude,NA
+7,7,2020-12-12,9:00 pm ET,Phoenix Suns,Utah Jazz,AT&T Sportsnet - Roc,Fox Sports Arizona,NBA TV
+8,1,2020-12-13,5:00 pm ET,Orlando Magic,Atlanta Hawks,Fox Sports Southeast,NA,NA
+9,1,2020-12-13,6:00 pm ET,Washington Wizards,Brooklyn Nets,YES,NBC Sports Washingto,NBA TV
+10,1,2020-12-13,7:00 pm ET,New York Knicks,Detroit Pistons,Fox Sports Detroit,MSG,NA
+11,1,2020-12-13,8:00 pm ET,Houston Rockets,Chicago Bulls,NBC Sports Chicago,AT&T Sportsnet - Sou,NA
+12,1,2020-12-13,8:30 pm ET,LA Clippers,Los Angeles Lakers,Spectrum SportsNet,Fox Sports Prime Tic,ESPN
+13,1,2020-12-13,9:00 pm ET,Sacramento Kings,Portland Trail Blazers,NBC Sports Northwest,Kings.com,NA
+14,2,2020-12-14,6:00 pm ET,Indiana Pacers,Cleveland Cavaliers,Fox Sports Ohio,Fox Sports Indiana,NA
+15,2,2020-12-14,7:00 pm ET,Toronto Raptors,Charlotte Hornets,Fox Sports Southeast,SNN,NA
+16,2,2020-12-14,7:00 pm ET,New Orleans Pelicans,Miami Heat,Fox Sports Sun,Fox Sports New Orlea,NBA TV
+17,2,2020-12-14,8:00 pm ET,Dallas Mavericks,Milwaukee Bucks,Fox Sports Wisconsin,Fox Sports Southwest,NA
+18,2,2020-12-14,8:00 pm ET,Memphis Grizzlies,Minnesota Timberwolves,Fox Sports North,Fox Sports Southeast,NA
+19,2,2020-12-14,9:00 pm ET,Phoenix Suns,Utah Jazz,AT&T Sportsnet - Roc,Fox Sports Arizona,NBA TV
+20,3,2020-12-15,7:30 pm ET,Boston Celtics,Philadelphia 76ers,NBC Sports Philadelp,NBC Sports Boston,TNT
+21,3,2020-12-15,8:00 pm ET,San Antonio Spurs,Houston Rockets,AT&T Sportsnet - Sou,CW35,NA
+22,3,2020-12-15,10:00 pm ET,Golden State Warriors,Sacramento Kings,NBC Sports Californi,NBC Sports Bay Area,TNT
+23,4,2020-12-16,7:30 pm ET,Cleveland Cavaliers,New York Knicks,MSG,Fox Sports Ohio,NA
+24,4,2020-12-16,8:00 pm ET,Chicago Bulls,Oklahoma City Thunder,Fox Sports Oklahoma,NBC Sports Chicago,NA
+25,4,2020-12-16,9:00 pm ET,Portland Trail Blazers,Denver Nuggets,Altitude,NBC Sports Northwest,NA
+26,4,2020-12-16,9:00 pm ET,Los Angeles Lakers,Phoenix Suns,Fox Sports Arizona,Spectrum SportsNet,NBA TV
+27,5,2020-12-17,7:00 pm ET,Charlotte Hornets,Orlando Magic,Fox Sports Florida,Fox Sports Southeast,NA
+28,5,2020-12-17,7:00 pm ET,Detroit Pistons,Washington Wizards,NBC Sports Washingto,Fox Sports Detroit,NA
+29,5,2020-12-17,8:00 pm ET,San Antonio Spurs,Houston Rockets,AT&T Sportsnet - Sou,CW35,NA
+30,5,2020-12-17,8:00 pm ET,Atlanta Hawks,Memphis Grizzlies,Fox Sports Southeast,Fox Sports Southeast,NA
+31,5,2020-12-17,8:30 pm ET,Minnesota Timberwolves,Dallas Mavericks,Fox Sports Southwest,Fox Sports North,NA
+32,5,2020-12-17,9:00 pm ET,Golden State Warriors,Sacramento Kings,NBC Sports Californi,NBC Sports Bay Area,ESPN
+33,5,2020-12-17,10:00 pm ET,Utah Jazz,LA Clippers,Fox Sports Prime Tic,AT&T Sportsnet - Roc,NA
+34,6,2020-12-18,6:00 pm ET,Philadelphia 76ers,Indiana Pacers,Fox Sports Indiana,NBC Sports Philadelp,NA
+35,6,2020-12-18,7:00 pm ET,Miami Heat,Toronto Raptors,TSN,Fox Sports Sun,NA
+36,6,2020-12-18,7:30 pm ET,Cleveland Cavaliers,New York Knicks,MSG,Fox Sports Ohio,NA
+37,6,2020-12-18,8:00 pm ET,Brooklyn Nets,Boston Celtics,NBC Sports Boston,YES,ESPN2
+38,6,2020-12-18,8:00 pm ET,Milwaukee Bucks,New Orleans Pelicans,Fox Sports New Orlea,Fox Sports Wisconsin,NA
+39,6,2020-12-18,8:00 pm ET,Chicago Bulls,Oklahoma City Thunder,Fox Sports Oklahoma,NBC Sports Chicago,NA
+40,6,2020-12-18,9:00 pm ET,Portland Trail Blazers,Denver Nuggets,Altitude,NBC Sports Northwest,NA
+41,6,2020-12-18,10:30 pm ET,Los Angeles Lakers,Phoenix Suns,Fox Sports Arizona,Spectrum SportsNet,ESPN
+42,7,2020-12-19,7:00 pm ET,Charlotte Hornets,Orlando Magic,Fox Sports Florida,Fox Sports Southeast,NA
+43,7,2020-12-19,7:00 pm ET,Detroit Pistons,Washington Wizards,NBC Sports Washingto,NA,NA
+44,7,2020-12-19,8:00 pm ET,Atlanta Hawks,Memphis Grizzlies,Fox Sports Southeast,Fox Sports Southeast,NBA TV
+45,3,2020-12-22,7:00 pm ET,Golden State Warriors,Brooklyn Nets,NA,NA,TNT
+46,3,2020-12-22,10:00 pm ET,LA Clippers,Los Angeles Lakers,NA,NA,TNT
+47,4,2020-12-23,7:00 pm ET,Charlotte Hornets,Cleveland Cavaliers,Fox Sports Ohio,Fox Sports Southeast,NA
+48,4,2020-12-23,7:00 pm ET,New York Knicks,Indiana Pacers,NA,NA,NA
+49,4,2020-12-23,7:00 pm ET,Miami Heat,Orlando Magic,Fox Sports Florida,Fox Sports Sun,NA
+50,4,2020-12-23,7:00 pm ET,Washington Wizards,Philadelphia 76ers,NBC Sports Washingto,NA,NA
+51,4,2020-12-23,7:30 pm ET,Milwaukee Bucks,Boston Celtics,NA,NA,TNT
+52,4,2020-12-23,7:30 pm ET,New Orleans Pelicans,Toronto Raptors,TSN,NA,NA
+53,4,2020-12-23,8:00 pm ET,Atlanta Hawks,Chicago Bulls,NBC Sports Chicago,NA,NA
+54,4,2020-12-23,8:00 pm ET,Oklahoma City Thunder,Houston Rockets,Fox Sports Oklahoma,NA,NA
+55,4,2020-12-23,8:00 pm ET,San Antonio Spurs,Memphis Grizzlies,Fox Sports Southeast,NA,NA
+56,4,2020-12-23,8:00 pm ET,Detroit Pistons,Minnesota Timberwolves,Fox Sports Detroit,NA,NA
+57,4,2020-12-23,9:00 pm ET,Sacramento Kings,Denver Nuggets,NA,NA,NA
+58,4,2020-12-23,10:00 pm ET,Utah Jazz,Portland Trail Blazers,NBC Sports Northwest,AT&T Sportsnet - Roc,NA
+59,4,2020-12-23,10:30 pm ET,Dallas Mavericks,Phoenix Suns,NA,NA,ESPN
+60,6,2020-12-25,12:00 pm ET,New Orleans Pelicans,Miami Heat,Fox Sports Sun,NA,ESPN
+61,6,2020-12-25,2:30 pm ET,Golden State Warriors,Milwaukee Bucks,NA,NA,ABC
+62,6,2020-12-25,5:00 pm ET,Brooklyn Nets,Boston Celtics,NA,NA,ABC
+63,6,2020-12-25,8:00 pm ET,Dallas Mavericks,Los Angeles Lakers,NA,NA,"ABC, ESPN"
+64,6,2020-12-25,10:30 pm ET,LA Clippers,Denver Nuggets,Fox Sports Prime Tic,NA,ESPN
+65,7,2020-12-26,5:00 pm ET,Atlanta Hawks,Memphis Grizzlies,Fox Sports Southeast,NA,NBA TV
+66,7,2020-12-26,7:00 pm ET,Oklahoma City Thunder,Charlotte Hornets,Fox Sports Southeast,Fox Sports Oklahoma,NA
+67,7,2020-12-26,7:00 pm ET,Cleveland Cavaliers,Detroit Pistons,Fox Sports Detroit,Fox Sports Ohio,NA
+68,7,2020-12-26,7:00 pm ET,Orlando Magic,Washington Wizards,NBC Sports Washingto,Fox Sports Florida,NA
+69,7,2020-12-26,7:30 pm ET,Philadelphia 76ers,New York Knicks,NA,NA,NBA TV
+70,7,2020-12-26,8:00 pm ET,Indiana Pacers,Chicago Bulls,NBC Sports Chicago,NA,NA
+71,7,2020-12-26,8:30 pm ET,Toronto Raptors,San Antonio Spurs,SN,NA,NA
+72,7,2020-12-26,9:00 pm ET,Minnesota Timberwolves,Utah Jazz,AT&T Sportsnet - Roc,NA,NA
+73,7,2020-12-26,10:00 pm ET,Houston Rockets,Portland Trail Blazers,NBC Sports Northwest,NA,NBA TV
+74,7,2020-12-26,10:00 pm ET,Phoenix Suns,Sacramento Kings,NA,NA,NA
+75,1,2020-12-27,3:30 pm ET,Dallas Mavericks,LA Clippers,Fox Sports Prime Tic,NA,NBA TV
+76,1,2020-12-27,7:00 pm ET,Brooklyn Nets,Charlotte Hornets,Fox Sports Southeast,YES,NBA TV
+77,1,2020-12-27,7:00 pm ET,Orlando Magic,Washington Wizards,NBC Sports Washingto,Fox Sports Florida,NA
+78,1,2020-12-27,7:00 pm ET,San Antonio Spurs,New Orleans Pelicans,NA,NA,NA
+79,1,2020-12-27,7:30 pm ET,Philadelphia 76ers,Cleveland Cavaliers,Fox Sports Ohio,NA,NA
+80,1,2020-12-27,7:30 pm ET,Milwaukee Bucks,New York Knicks,NA,NA,NA
+81,1,2020-12-27,8:00 pm ET,Boston Celtics,Indiana Pacers,NA,NA,NA
+82,1,2020-12-27,8:00 pm ET,Golden State Warriors,Chicago Bulls,NBC Sports Chicago,NA,NA
+83,1,2020-12-27,9:00 pm ET,Phoenix Suns,Sacramento Kings,NA,NA,NA
+84,1,2020-12-27,10:00 pm ET,Minnesota Timberwolves,Los Angeles Lakers,Spectrum SportsNet,NA,NBA TV
+85,2,2020-12-28,7:30 pm ET,Detroit Pistons,Atlanta Hawks,Fox Sports Detroit,NA,NA
+86,2,2020-12-28,7:30 pm ET,Memphis Grizzlies,Brooklyn Nets,YES,Fox Sports Southeast,NBA TV
+87,2,2020-12-28,8:00 pm ET,Utah Jazz,Oklahoma City Thunder,Fox Sports Oklahoma,AT&T Sportsnet - Roc,NA
+88,2,2020-12-28,9:00 pm ET,Houston Rockets,Denver Nuggets,NA,NA,NA
+89,2,2020-12-28,10:00 pm ET,Portland Trail Blazers,Los Angeles Lakers,Spectrum SportsNet,NBC Sports Northwest,NBA TV
+90,3,2020-12-29,7:00 pm ET,New York Knicks,Cleveland Cavaliers,Fox Sports Ohio,NA,NA
+91,3,2020-12-29,7:00 pm ET,Golden State Warriors,Detroit Pistons,Fox Sports Detroit,NA,NA
+92,3,2020-12-29,7:00 pm ET,Boston Celtics,Indiana Pacers,NA,NA,NA
+93,3,2020-12-29,7:00 pm ET,Toronto Raptors,Philadelphia 76ers,SN,NA,NA
+94,3,2020-12-29,7:00 pm ET,Chicago Bulls,Washington Wizards,NBC Sports Washingto,NBC Sports Chicago,NA
+95,3,2020-12-29,7:30 pm ET,Milwaukee Bucks,Miami Heat,Fox Sports Sun,NA,TNT
+96,3,2020-12-29,8:00 pm ET,Orlando Magic,Oklahoma City Thunder,Fox Sports Oklahoma,Fox Sports Florida,NA
+97,3,2020-12-29,10:00 pm ET,New Orleans Pelicans,Phoenix Suns,NA,NA,TNT
+98,3,2020-12-29,10:00 pm ET,Minnesota Timberwolves,LA Clippers,Fox Sports Prime Tic,NA,NA
+99,3,2020-12-29,10:00 pm ET,Denver Nuggets,Sacramento Kings,NA,NA,NA
+100,4,2020-12-30,7:30 pm ET,Memphis Grizzlies,Boston Celtics,Fox Sports Southeast,NA,NA
+101,4,2020-12-30,7:30 pm ET,Atlanta Hawks,Brooklyn Nets,YES,NA,NA
+102,4,2020-12-30,7:30 pm ET,Milwaukee Bucks,Miami Heat,Fox Sports Sun,NA,NBA TV
+103,4,2020-12-30,8:30 pm ET,Charlotte Hornets,Dallas Mavericks,Fox Sports Southeast,NA,NA
+104,4,2020-12-30,8:30 pm ET,Los Angeles Lakers,San Antonio Spurs,Spectrum SportsNet,NA,NA
+105,4,2020-12-30,10:00 pm ET,Portland Trail Blazers,LA Clippers,Fox Sports Prime Tic,NBC Sports Northwest,NBA TV
+106,5,2020-12-31,3:00 pm ET,Cleveland Cavaliers,Indiana Pacers,Fox Sports Ohio,NA,NA
+107,5,2020-12-31,5:00 pm ET,Chicago Bulls,Washington Wizards,NBC Sports Washingto,NBC Sports Chicago,NA
+108,5,2020-12-31,6:30 pm ET,Philadelphia 76ers,Orlando Magic,Fox Sports Florida,NA,NBA TV
+109,5,2020-12-31,7:00 pm ET,Sacramento Kings,Houston Rockets,NA,NA,NA
+110,5,2020-12-31,7:30 pm ET,New York Knicks,Toronto Raptors,SN,NA,NA
+111,5,2020-12-31,8:00 pm ET,New Orleans Pelicans,Oklahoma City Thunder,Fox Sports Oklahoma,NA,NA
+112,5,2020-12-31,9:00 pm ET,Phoenix Suns,Utah Jazz,AT&T Sportsnet - Roc,NA,NBA TV
+113,6,2021-01-01,7:00 pm ET,Memphis Grizzlies,Charlotte Hornets,Fox Sports Southeast,Fox Sports Southeast,NA
+114,6,2021-01-01,7:00 pm ET,Boston Celtics,Detroit Pistons,Fox Sports Detroit,NA,NA
+115,6,2021-01-01,7:00 pm ET,Miami Heat,Dallas Mavericks,Fox Sports Sun,NA,NA
+116,6,2021-01-01,7:30 pm ET,Atlanta Hawks,Brooklyn Nets,YES,NA,NA
+117,6,2021-01-01,8:00 pm ET,Chicago Bulls,Milwaukee Bucks,NBC Sports Chicago,NA,NA
+118,6,2021-01-01,8:00 pm ET,Washington Wizards,Minnesota Timberwolves,NBC Sports Washingto,NA,NA
+119,6,2021-01-01,8:00 pm ET,Los Angeles Lakers,San Antonio Spurs,Spectrum SportsNet,NA,NBA TV
+120,6,2021-01-01,9:00 pm ET,Phoenix Suns,Denver Nuggets,NA,NA,NA
+121,6,2021-01-01,9:00 pm ET,LA Clippers,Utah Jazz,AT&T Sportsnet - Roc,Fox Sports Prime Tic,NA
+122,6,2021-01-01,10:30 pm ET,Portland Trail Blazers,Golden State Warriors,NBC Sports Northwest,NA,NBA TV
+123,7,2021-01-02,5:00 pm ET,Sacramento Kings,Houston Rockets,NA,NA,NBA TV
+124,7,2021-01-02,7:00 pm ET,New York Knicks,Indiana Pacers,NA,NA,NA
+125,7,2021-01-02,7:00 pm ET,Oklahoma City Thunder,Orlando Magic,Fox Sports Florida,Fox Sports Oklahoma,NA
+126,7,2021-01-02,7:00 pm ET,Charlotte Hornets,Philadelphia 76ers,Fox Sports Southeast,NA,NA
+127,7,2021-01-02,7:30 pm ET,Cleveland Cavaliers,Atlanta Hawks,Fox Sports Ohio,NA,NA
+128,7,2021-01-02,7:30 pm ET,Toronto Raptors,New Orleans Pelicans,SN,NA,NBA TV
+129,1,2021-01-03,3:00 pm ET,Boston Celtics,Detroit Pistons,Fox Sports Detroit,NA,NBA TV
+130,1,2021-01-03,6:00 pm ET,Washington Wizards,Brooklyn Nets,YES,NBC Sports Washingto,NBA TV
+131,1,2021-01-03,6:00 pm ET,Los Angeles Lakers,Memphis Grizzlies,Fox Sports Southeast,Spectrum SportsNet,NA
+132,1,2021-01-03,7:00 pm ET,Denver Nuggets,Minnesota Timberwolves,NA,NA,NA
+133,1,2021-01-03,7:00 pm ET,Utah Jazz,San Antonio Spurs,AT&T Sportsnet - Roc,NA,NA
+134,1,2021-01-03,8:00 pm ET,Dallas Mavericks,Chicago Bulls,NBC Sports Chicago,NA,NA
+135,1,2021-01-03,8:00 pm ET,LA Clippers,Phoenix Suns,Fox Sports Prime Tic,NA,NA
+136,1,2021-01-03,8:30 pm ET,Portland Trail Blazers,Golden State Warriors,NBC Sports Northwest,NA,NBA TV
+137,2,2021-01-04,7:00 pm ET,Cleveland Cavaliers,Orlando Magic,Fox Sports Florida,Fox Sports Ohio,NA
+138,2,2021-01-04,7:00 pm ET,Charlotte Hornets,Philadelphia 76ers,Fox Sports Southeast,NA,NA
+139,2,2021-01-04,7:30 pm ET,New York Knicks,Atlanta Hawks,NA,NA,NA
+140,2,2021-01-04,7:30 pm ET,Oklahoma City Thunder,Miami Heat,Fox Sports Sun,Fox Sports Oklahoma,NA
+141,2,2021-01-04,7:30 pm ET,Boston Celtics,Toronto Raptors,SN,NA,NA
+142,2,2021-01-04,8:00 pm ET,Dallas Mavericks,Houston Rockets,NA,NA,NA
+143,2,2021-01-04,8:00 pm ET,Detroit Pistons,Milwaukee Bucks,Fox Sports Detroit,NA,NA
+144,2,2021-01-04,8:00 pm ET,Indiana Pacers,New Orleans Pelicans,NA,NA,NA
+145,2,2021-01-04,10:00 pm ET,Sacramento Kings,Golden State Warriors,NA,NA,NA
+146,3,2021-01-05,7:30 pm ET,Utah Jazz,Brooklyn Nets,YES,AT&T Sportsnet - Roc,NA
+147,3,2021-01-05,8:00 pm ET,Los Angeles Lakers,Memphis Grizzlies,Fox Sports Southeast,Spectrum SportsNet,NBA TV
+148,3,2021-01-05,9:00 pm ET,Minnesota Timberwolves,Denver Nuggets,NA,NA,NA
+149,3,2021-01-05,10:00 pm ET,San Antonio Spurs,LA Clippers,Fox Sports Prime Tic,NA,NA
+150,3,2021-01-05,10:30 pm ET,Chicago Bulls,Portland Trail Blazers,NBC Sports Northwest,NBC Sports Chicago,NBA TV
+151,4,2021-01-06,7:00 pm ET,Houston Rockets,Indiana Pacers,NA,NA,NA
+152,4,2021-01-06,7:00 pm ET,Cleveland Cavaliers,Orlando Magic,Fox Sports Florida,Fox Sports Ohio,NA
+153,4,2021-01-06,7:00 pm ET,Washington Wizards,Philadelphia 76ers,NBC Sports Washingto,NA,NA
+154,4,2021-01-06,7:30 pm ET,Charlotte Hornets,Atlanta Hawks,Fox Sports Southeast,NA,NA
+155,4,2021-01-06,7:30 pm ET,Boston Celtics,Miami Heat,Fox Sports Sun,NA,ESPN
+156,4,2021-01-06,7:30 pm ET,Utah Jazz,New York Knicks,AT&T Sportsnet - Roc,NA,NA
+157,4,2021-01-06,8:00 pm ET,Detroit Pistons,Milwaukee Bucks,Fox Sports Detroit,NA,NA
+158,4,2021-01-06,8:00 pm ET,Oklahoma City Thunder,New Orleans Pelicans,Fox Sports Oklahoma,NA,NA
+159,4,2021-01-06,9:00 pm ET,Toronto Raptors,Phoenix Suns,SN,NA,NA
+160,4,2021-01-06,10:00 pm ET,LA Clippers,Golden State Warriors,Fox Sports Prime Tic,NA,ESPN
+161,4,2021-01-06,10:00 pm ET,Chicago Bulls,Sacramento Kings,NBC Sports Chicago,NA,NA
+162,5,2021-01-07,7:30 pm ET,Philadelphia 76ers,Brooklyn Nets,YES,NA,TNT
+163,5,2021-01-07,8:00 pm ET,Cleveland Cavaliers,Memphis Grizzlies,Fox Sports Southeast,Fox Sports Ohio,NA
+164,5,2021-01-07,10:00 pm ET,Dallas Mavericks,Denver Nuggets,NA,NA,TNT
+165,5,2021-01-07,10:00 pm ET,San Antonio Spurs,Los Angeles Lakers,Spectrum SportsNet,NA,NA
+166,5,2021-01-07,10:00 pm ET,Minnesota Timberwolves,Portland Trail Blazers,NBC Sports Northwest,NA,NA
+167,6,2021-01-08,7:00 pm ET,Phoenix Suns,Detroit Pistons,Fox Sports Detroit,NA,NA
+168,6,2021-01-08,7:30 pm ET,Washington Wizards,Boston Celtics,NBC Sports Washingto,NA,NA
+169,6,2021-01-08,7:30 pm ET,Oklahoma City Thunder,New York Knicks,Fox Sports Oklahoma,NA,NA
+170,6,2021-01-08,7:30 pm ET,Charlotte Hornets,New Orleans Pelicans,Fox Sports Southeast,NA,ESPN
+171,6,2021-01-08,8:00 pm ET,Orlando Magic,Houston Rockets,Fox Sports Florida,NA,NA
+172,6,2021-01-08,8:00 pm ET,Brooklyn Nets,Memphis Grizzlies,Fox Sports Southeast,YES,NA
+173,6,2021-01-08,8:00 pm ET,Utah Jazz,Milwaukee Bucks,AT&T Sportsnet - Roc,NA,NA
+174,6,2021-01-08,10:00 pm ET,LA Clippers,Golden State Warriors,NA,NA,ESPN
+175,6,2021-01-08,10:00 pm ET,Chicago Bulls,Los Angeles Lakers,Spectrum SportsNet,NBC Sports Chicago,NA
+176,6,2021-01-08,10:00 pm ET,Toronto Raptors,Sacramento Kings,TSN,NA,NA
+177,7,2021-01-09,3:00 pm ET,Denver Nuggets,Philadelphia 76ers,NA,NA,NBA TV
+178,7,2021-01-09,7:00 pm ET,Atlanta Hawks,Charlotte Hornets,Fox Sports Southeast,NA,NA
+179,7,2021-01-09,7:00 pm ET,Phoenix Suns,Indiana Pacers,NA,NA,NA
+180,7,2021-01-09,7:00 pm ET,Miami Heat,Washington Wizards,NBC Sports Washingto,Fox Sports Sun,NBA TV
+181,7,2021-01-09,8:00 pm ET,Cleveland Cavaliers,Milwaukee Bucks,Fox Sports Ohio,NA,NA
+182,7,2021-01-09,8:00 pm ET,San Antonio Spurs,Minnesota Timberwolves,NA,NA,NA
+183,7,2021-01-09,8:30 pm ET,Orlando Magic,Dallas Mavericks,Fox Sports Florida,NA,NA
+184,7,2021-01-09,10:00 pm ET,Portland Trail Blazers,Sacramento Kings,NBC Sports Northwest,NA,NA
+185,1,2021-01-10,3:00 pm ET,Utah Jazz,Detroit Pistons,Fox Sports Detroit,AT&T Sportsnet - Roc,NBA TV
+186,1,2021-01-10,4:00 pm ET,Chicago Bulls,LA Clippers,Fox Sports Prime Tic,NBC Sports Chicago,NA
+187,1,2021-01-10,6:00 pm ET,Oklahoma City Thunder,Brooklyn Nets,YES,Fox Sports Oklahoma,NA
+188,1,2021-01-10,6:00 pm ET,Denver Nuggets,New York Knicks,NA,NA,NA
+189,1,2021-01-10,7:00 pm ET,Miami Heat,Boston Celtics,Fox Sports Sun,NA,NBA TV
+190,1,2021-01-10,7:00 pm ET,Los Angeles Lakers,Houston Rockets,Spectrum SportsNet,NA,NA
+191,1,2021-01-10,8:00 pm ET,San Antonio Spurs,Minnesota Timberwolves,NA,NA,NA
+192,1,2021-01-10,8:30 pm ET,Toronto Raptors,Golden State Warriors,SN,NA,NA
+193,2,2021-01-11,7:00 pm ET,New York Knicks,Charlotte Hornets,Fox Sports Southeast,NA,NA
+194,2,2021-01-11,7:00 pm ET,Memphis Grizzlies,Cleveland Cavaliers,Fox Sports Ohio,Fox Sports Southeast,NA
+195,2,2021-01-11,7:00 pm ET,Milwaukee Bucks,Orlando Magic,Fox Sports Florida,NA,NA
+196,2,2021-01-11,7:00 pm ET,Phoenix Suns,Washington Wizards,NBC Sports Washingto,NA,NA
+197,2,2021-01-11,7:30 pm ET,Philadelphia 76ers,Atlanta Hawks,NA,NA,NA
+198,2,2021-01-11,8:30 pm ET,New Orleans Pelicans,Dallas Mavericks,NA,NA,NBA TV
+199,2,2021-01-11,10:00 pm ET,Toronto Raptors,Portland Trail Blazers,NBC Sports Northwest,SN,NA
+200,2,2021-01-11,10:00 pm ET,Indiana Pacers,Sacramento Kings,NA,NA,NA
+201,3,2021-01-12,7:00 pm ET,Miami Heat,Philadelphia 76ers,Fox Sports Sun,NA,NA
+202,3,2021-01-12,7:30 pm ET,Denver Nuggets,Brooklyn Nets,YES,NA,NA
+203,3,2021-01-12,7:30 pm ET,Utah Jazz,Cleveland Cavaliers,Fox Sports Ohio,AT&T Sportsnet - Roc,NA
+204,3,2021-01-12,8:00 pm ET,Boston Celtics,Chicago Bulls,NBC Sports Chicago,NA,NA
+205,3,2021-01-12,8:00 pm ET,Los Angeles Lakers,Houston Rockets,Spectrum SportsNet,NA,NBA TV
+206,3,2021-01-12,8:00 pm ET,San Antonio Spurs,Oklahoma City Thunder,Fox Sports Oklahoma,NA,NA
+207,3,2021-01-12,10:30 pm ET,Indiana Pacers,Golden State Warriors,NA,NA,NBA TV
+208,4,2021-01-13,7:00 pm ET,Dallas Mavericks,Charlotte Hornets,Fox Sports Southeast,NA,NA
+209,4,2021-01-13,7:00 pm ET,Milwaukee Bucks,Detroit Pistons,Fox Sports Detroit,NA,NA
+210,4,2021-01-13,7:00 pm ET,Utah Jazz,Washington Wizards,NBC Sports Washingto,AT&T Sportsnet - Roc,NA
+211,4,2021-01-13,7:30 pm ET,Orlando Magic,Boston Celtics,Fox Sports Florida,NA,NA
+212,4,2021-01-13,7:30 pm ET,Brooklyn Nets,New York Knicks,YES,NA,ESPN
+213,4,2021-01-13,8:00 pm ET,Memphis Grizzlies,Minnesota Timberwolves,Fox Sports Southeast,NA,NA
+214,4,2021-01-13,8:00 pm ET,Los Angeles Lakers,Oklahoma City Thunder,Fox Sports Oklahoma,Spectrum SportsNet,NA
+215,4,2021-01-13,9:00 pm ET,Atlanta Hawks,Phoenix Suns,NA,NA,NA
+216,4,2021-01-13,10:00 pm ET,New Orleans Pelicans,LA Clippers,Fox Sports Prime Tic,NA,ESPN
+217,4,2021-01-13,10:00 pm ET,Portland Trail Blazers,Sacramento Kings,NBC Sports Northwest,NA,NA
+218,5,2021-01-14,7:30 pm ET,Miami Heat,Philadelphia 76ers,Fox Sports Sun,NA,TNT
+219,5,2021-01-14,7:30 pm ET,Charlotte Hornets,Toronto Raptors,TSN,Fox Sports Southeast,NA
+220,5,2021-01-14,8:30 pm ET,Houston Rockets,San Antonio Spurs,NA,NA,NA
+221,5,2021-01-14,10:00 pm ET,Golden State Warriors,Denver Nuggets,NA,NA,TNT
+222,5,2021-01-14,10:00 pm ET,Indiana Pacers,Portland Trail Blazers,NBC Sports Northwest,NA,NA
+223,6,2021-01-15,7:00 pm ET,Washington Wizards,Detroit Pistons,Fox Sports Detroit,NBC Sports Washingto,NA
+224,6,2021-01-15,7:30 pm ET,Orlando Magic,Boston Celtics,Fox Sports Florida,NA,NA
+225,6,2021-01-15,7:30 pm ET,New York Knicks,Cleveland Cavaliers,Fox Sports Ohio,NA,NA
+226,6,2021-01-15,7:30 pm ET,Dallas Mavericks,Milwaukee Bucks,NA,NA,ESPN
+227,6,2021-01-15,8:00 pm ET,Memphis Grizzlies,Minnesota Timberwolves,Fox Sports Southeast,NA,NA
+228,6,2021-01-15,8:00 pm ET,Chicago Bulls,Oklahoma City Thunder,Fox Sports Oklahoma,NBC Sports Chicago,NA
+229,6,2021-01-15,9:00 pm ET,Golden State Warriors,Phoenix Suns,NA,NA,NA
+230,6,2021-01-15,9:00 pm ET,Atlanta Hawks,Utah Jazz,AT&T Sportsnet - Roc,NA,NA
+231,6,2021-01-15,10:00 pm ET,New Orleans Pelicans,Los Angeles Lakers,Spectrum SportsNet,NA,ESPN
+232,6,2021-01-15,10:00 pm ET,LA Clippers,Sacramento Kings,Fox Sports Prime Tic,NA,NA
+233,7,2021-01-16,5:00 pm ET,Houston Rockets,San Antonio Spurs,NA,NA,NBA TV
+234,7,2021-01-16,6:00 pm ET,Orlando Magic,Brooklyn Nets,YES,Fox Sports Florida,NA
+235,7,2021-01-16,7:30 pm ET,Charlotte Hornets,Toronto Raptors,TSN,Fox Sports Southeast,NBA TV
+236,7,2021-01-16,8:00 pm ET,Detroit Pistons,Miami Heat,Fox Sports Sun,Fox Sports Detroit,NA
+237,7,2021-01-16,8:00 pm ET,Philadelphia 76ers,Memphis Grizzlies,Fox Sports Southeast,NA,NA
+238,7,2021-01-16,9:00 pm ET,Indiana Pacers,Phoenix Suns,NA,NA,NA
+239,7,2021-01-16,10:00 pm ET,Atlanta Hawks,Portland Trail Blazers,NBC Sports Northwest,NA,NA
+240,1,2021-01-17,1:00 pm ET,New York Knicks,Boston Celtics,NA,NA,NBA TV
+241,1,2021-01-17,2:00 pm ET,Cleveland Cavaliers,Washington Wizards,NBC Sports Washingto,Fox Sports Ohio,NA
+242,1,2021-01-17,3:00 pm ET,Chicago Bulls,Dallas Mavericks,NBC Sports Chicago,NA,NA
+243,1,2021-01-17,7:00 pm ET,Philadelphia 76ers,Oklahoma City Thunder,Fox Sports Oklahoma,NA,NBA TV
+244,1,2021-01-17,8:00 pm ET,Utah Jazz,Denver Nuggets,AT&T Sportsnet - Roc,NA,NA
+245,1,2021-01-17,9:00 pm ET,New Orleans Pelicans,Sacramento Kings,NA,NA,NA
+246,1,2021-01-17,10:00 pm ET,Indiana Pacers,LA Clippers,Fox Sports Prime Tic,NA,NBA TV
+247,2,2021-01-18,12:00 pm ET,Orlando Magic,New York Knicks,Fox Sports Florida,NA,NBA TV
+248,2,2021-01-18,2:00 pm ET,Cleveland Cavaliers,Washington Wizards,NBC Sports Washingto,Fox Sports Ohio,NA
+249,2,2021-01-18,2:30 pm ET,Minnesota Timberwolves,Atlanta Hawks,NA,NA,NBA TV
+250,2,2021-01-18,3:00 pm ET,Detroit Pistons,Miami Heat,Fox Sports Sun,Fox Sports Detroit,NA
+251,2,2021-01-18,3:00 pm ET,San Antonio Spurs,Portland Trail Blazers,NBC Sports Northwest,NA,NA
+252,2,2021-01-18,5:00 pm ET,Phoenix Suns,Memphis Grizzlies,Fox Sports Southeast,NA,TNT
+253,2,2021-01-18,7:30 pm ET,Milwaukee Bucks,Brooklyn Nets,NA,NA,TNT
+254,2,2021-01-18,7:30 pm ET,Dallas Mavericks,Toronto Raptors,TSN,NA,NA
+255,2,2021-01-18,8:00 pm ET,Houston Rockets,Chicago Bulls,NBC Sports Chicago,NA,NA
+256,2,2021-01-18,10:00 pm ET,Golden State Warriors,Los Angeles Lakers,NA,NA,TNT
+257,3,2021-01-19,9:00 pm ET,Oklahoma City Thunder,Denver Nuggets,Fox Sports Oklahoma,NA,NA
+258,3,2021-01-19,9:00 pm ET,New Orleans Pelicans,Utah Jazz,AT&T Sportsnet - Roc,NA,NBA TV
+259,4,2021-01-20,7:00 pm ET,Washington Wizards,Charlotte Hornets,Fox Sports Southeast,NBC Sports Washingto,NA
+260,4,2021-01-20,7:00 pm ET,Brooklyn Nets,Cleveland Cavaliers,Fox Sports Ohio,YES,NA
+261,4,2021-01-20,7:00 pm ET,Dallas Mavericks,Indiana Pacers,NA,NA,NA
+262,4,2021-01-20,7:00 pm ET,Boston Celtics,Philadelphia 76ers,NA,NA,ESPN
+263,4,2021-01-20,7:30 pm ET,Detroit Pistons,Atlanta Hawks,Fox Sports Detroit,NA,NA
+264,4,2021-01-20,7:30 pm ET,Miami Heat,Toronto Raptors,SN,Fox Sports Sun,NA
+265,4,2021-01-20,8:00 pm ET,Orlando Magic,Minnesota Timberwolves,Fox Sports Florida,NA,NA
+266,4,2021-01-20,9:30 pm ET,Phoenix Suns,Houston Rockets,NA,NA,ESPN
+267,4,2021-01-20,10:00 pm ET,San Antonio Spurs,Golden State Warriors,NA,NA,NA
+268,4,2021-01-20,10:00 pm ET,Sacramento Kings,LA Clippers,Fox Sports Prime Tic,NA,NA
+269,4,2021-01-20,10:00 pm ET,Memphis Grizzlies,Portland Trail Blazers,NBC Sports Northwest,Fox Sports Southeast,NA
+270,5,2021-01-21,7:30 pm ET,Los Angeles Lakers,Milwaukee Bucks,Spectrum SportsNet,NA,TNT
+271,5,2021-01-21,10:00 pm ET,New Orleans Pelicans,Utah Jazz,NA,NA,TNT
+272,5,2021-01-21,10:00 pm ET,New York Knicks,Golden State Warriors,NA,NA,NA
+273,6,2021-01-22,7:00 pm ET,Chicago Bulls,Charlotte Hornets,Fox Sports Southeast,NBC Sports Chicago,NA
+274,6,2021-01-22,7:00 pm ET,Houston Rockets,Detroit Pistons,Fox Sports Detroit,NA,NA
+275,6,2021-01-22,7:00 pm ET,Orlando Magic,Indiana Pacers,Fox Sports Florida,NA,NA
+276,6,2021-01-22,7:30 pm ET,Brooklyn Nets,Cleveland Cavaliers,Fox Sports Ohio,YES,NA
+277,6,2021-01-22,7:30 pm ET,Boston Celtics,Philadelphia 76ers,NA,NA,ESPN
+278,6,2021-01-22,7:30 pm ET,Miami Heat,Toronto Raptors,TSN,Fox Sports Sun,NA
+279,6,2021-01-22,8:00 pm ET,Washington Wizards,Milwaukee Bucks,NBC Sports Washingto,NA,NA
+280,6,2021-01-22,8:00 pm ET,Atlanta Hawks,Minnesota Timberwolves,NA,NA,NA
+281,6,2021-01-22,8:30 pm ET,Dallas Mavericks,San Antonio Spurs,NA,NA,NA
+282,6,2021-01-22,10:00 pm ET,Denver Nuggets,Phoenix Suns,NA,NA,ESPN
+283,6,2021-01-22,10:00 pm ET,Oklahoma City Thunder,LA Clippers,Fox Sports Prime Tic,Fox Sports Oklahoma,NA
+284,6,2021-01-22,10:00 pm ET,Memphis Grizzlies,Portland Trail Blazers,NBC Sports Northwest,Fox Sports Southeast,NA
+285,6,2021-01-22,10:00 pm ET,New York Knicks,Sacramento Kings,NA,NA,NA
+286,7,2021-01-23,5:00 pm ET,Golden State Warriors,Utah Jazz,AT&T Sportsnet - Roc,NA,NBA TV
+287,7,2021-01-23,7:00 pm ET,Philadelphia 76ers,Detroit Pistons,Fox Sports Detroit,NA,NA
+288,7,2021-01-23,7:30 pm ET,Miami Heat,Brooklyn Nets,YES,Fox Sports Sun,NBA TV
+289,7,2021-01-23,8:00 pm ET,Los Angeles Lakers,Chicago Bulls,NBC Sports Chicago,Spectrum SportsNet,NA
+290,7,2021-01-23,8:00 pm ET,New Orleans Pelicans,Minnesota Timberwolves,NA,NA,NA
+291,7,2021-01-23,8:30 pm ET,Houston Rockets,Dallas Mavericks,NA,NA,NA
+292,7,2021-01-23,9:00 pm ET,Denver Nuggets,Phoenix Suns,NA,NA,NA
+293,1,2021-01-24,3:30 pm ET,Toronto Raptors,Indiana Pacers,SN,NA,NBA TV
+294,1,2021-01-24,4:00 pm ET,Cleveland Cavaliers,Boston Celtics,Fox Sports Ohio,NA,NA
+295,1,2021-01-24,4:00 pm ET,Oklahoma City Thunder,LA Clippers,Fox Sports Prime Tic,Fox Sports Oklahoma,NA
+296,1,2021-01-24,6:00 pm ET,Charlotte Hornets,Orlando Magic,Fox Sports Florida,Fox Sports Southeast,NA
+297,1,2021-01-24,7:00 pm ET,Washington Wizards,San Antonio Spurs,NBC Sports Washingto,NA,NA
+298,1,2021-01-24,7:30 pm ET,Atlanta Hawks,Milwaukee Bucks,NA,NA,NBA TV
+299,1,2021-01-24,8:00 pm ET,Sacramento Kings,Memphis Grizzlies,Fox Sports Southeast,NA,NA
+300,1,2021-01-24,9:00 pm ET,New York Knicks,Portland Trail Blazers,NBC Sports Northwest,NA,NA
+301,2,2021-01-25,7:00 pm ET,Philadelphia 76ers,Detroit Pistons,Fox Sports Detroit,NA,NA
+302,2,2021-01-25,7:00 pm ET,Toronto Raptors,Indiana Pacers,TSN,NA,NA
+303,2,2021-01-25,7:00 pm ET,Charlotte Hornets,Orlando Magic,Fox Sports Florida,Fox Sports Southeast,NA
+304,2,2021-01-25,7:30 pm ET,Miami Heat,Brooklyn Nets,YES,Fox Sports Sun,NBA TV
+305,2,2021-01-25,7:30 pm ET,Los Angeles Lakers,Cleveland Cavaliers,Fox Sports Ohio,Spectrum SportsNet,NA
+306,2,2021-01-25,8:00 pm ET,Boston Celtics,Chicago Bulls,NBC Sports Chicago,NA,NA
+307,2,2021-01-25,8:00 pm ET,Sacramento Kings,Memphis Grizzlies,Fox Sports Southeast,NA,NA
+308,2,2021-01-25,8:00 pm ET,San Antonio Spurs,New Orleans Pelicans,NA,NA,NA
+309,2,2021-01-25,8:30 pm ET,Denver Nuggets,Dallas Mavericks,NA,NA,NA
+310,2,2021-01-25,10:00 pm ET,Minnesota Timberwolves,Golden State Warriors,NA,NA,NBA TV
+311,2,2021-01-25,10:00 pm ET,Oklahoma City Thunder,Portland Trail Blazers,NBC Sports Northwest,Fox Sports Oklahoma,NA
+312,3,2021-01-26,7:30 pm ET,LA Clippers,Atlanta Hawks,Fox Sports Prime Tic,NA,NA
+313,3,2021-01-26,8:00 pm ET,Washington Wizards,Houston Rockets,NBC Sports Washingto,NA,NBA TV
+314,3,2021-01-26,9:00 pm ET,New York Knicks,Utah Jazz,AT&T Sportsnet - Roc,NA,NA
+315,4,2021-01-27,7:00 pm ET,Indiana Pacers,Charlotte Hornets,Fox Sports Southeast,NA,NA
+316,4,2021-01-27,7:00 pm ET,Detroit Pistons,Cleveland Cavaliers,Fox Sports Ohio,Fox Sports Detroit,NA
+317,4,2021-01-27,7:00 pm ET,Sacramento Kings,Orlando Magic,Fox Sports Florida,NA,NA
+318,4,2021-01-27,7:30 pm ET,Brooklyn Nets,Atlanta Hawks,YES,NA,NA
+319,4,2021-01-27,7:30 pm ET,Denver Nuggets,Miami Heat,Fox Sports Sun,NA,NA
+320,4,2021-01-27,7:30 pm ET,Los Angeles Lakers,Philadelphia 76ers,Spectrum SportsNet,NA,ESPN
+321,4,2021-01-27,7:30 pm ET,Milwaukee Bucks,Toronto Raptors,TSN,NA,NA
+322,4,2021-01-27,8:00 pm ET,Chicago Bulls,Memphis Grizzlies,Fox Sports Southeast,NBC Sports Chicago,NA
+323,4,2021-01-27,8:00 pm ET,Washington Wizards,New Orleans Pelicans,NBC Sports Washingto,NA,NA
+324,4,2021-01-27,8:30 pm ET,Boston Celtics,San Antonio Spurs,NA,NA,NA
+325,4,2021-01-27,9:00 pm ET,Oklahoma City Thunder,Phoenix Suns,Fox Sports Oklahoma,NA,NA
+326,4,2021-01-27,9:00 pm ET,Dallas Mavericks,Utah Jazz,AT&T Sportsnet - Roc,NA,NA
+327,4,2021-01-27,10:00 pm ET,Minnesota Timberwolves,Golden State Warriors,NA,NA,ESPN
+328,5,2021-01-28,7:00 pm ET,Los Angeles Lakers,Detroit Pistons,Fox Sports Detroit,Spectrum SportsNet,NA
+329,5,2021-01-28,7:00 pm ET,LA Clippers,Miami Heat,Fox Sports Prime Tic,NA,TNT
+330,5,2021-01-28,9:00 pm ET,Golden State Warriors,Phoenix Suns,NA,NA,NA
+331,5,2021-01-28,9:30 pm ET,Portland Trail Blazers,Houston Rockets,NA,NA,TNT
+332,6,2021-01-29,7:00 pm ET,Indiana Pacers,Charlotte Hornets,Fox Sports Southeast,NA,NA
+333,6,2021-01-29,7:00 pm ET,LA Clippers,Orlando Magic,Fox Sports Florida,Fox Sports Prime Tic,NA
+334,6,2021-01-29,7:00 pm ET,Atlanta Hawks,Washington Wizards,NBC Sports Washingto,NA,NA
+335,6,2021-01-29,7:30 pm ET,Cleveland Cavaliers,New York Knicks,Fox Sports Ohio,NA,NA
+336,6,2021-01-29,7:30 pm ET,Sacramento Kings,Toronto Raptors,SN,NA,NA
+337,6,2021-01-29,7:30 pm ET,Milwaukee Bucks,New Orleans Pelicans,NA,NA,ESPN
+338,6,2021-01-29,8:00 pm ET,Philadelphia 76ers,Minnesota Timberwolves,NA,NA,NA
+339,6,2021-01-29,8:00 pm ET,Brooklyn Nets,Oklahoma City Thunder,Fox Sports Oklahoma,YES,NA
+340,6,2021-01-29,8:30 pm ET,Denver Nuggets,San Antonio Spurs,NA,NA,NA
+341,6,2021-01-29,10:00 pm ET,Dallas Mavericks,Utah Jazz,AT&T Sportsnet - Roc,NA,ESPN
+342,7,2021-01-30,5:00 pm ET,Portland Trail Blazers,Chicago Bulls,NBC Sports Chicago,NBC Sports Northwest,NA
+343,7,2021-01-30,7:00 pm ET,Milwaukee Bucks,Charlotte Hornets,Fox Sports Southeast,NA,NA
+344,7,2021-01-30,7:00 pm ET,Houston Rockets,New Orleans Pelicans,NA,NA,NA
+345,7,2021-01-30,8:00 pm ET,Sacramento Kings,Miami Heat,Fox Sports Sun,NA,NA
+346,7,2021-01-30,8:30 pm ET,Los Angeles Lakers,Boston Celtics,NA,NA,ABC
+347,7,2021-01-30,8:30 pm ET,Phoenix Suns,Dallas Mavericks,NA,NA,NA
+348,7,2021-01-30,8:30 pm ET,Memphis Grizzlies,San Antonio Spurs,Fox Sports Southeast,NA,NA
+349,7,2021-01-30,8:30 pm ET,Detroit Pistons,Golden State Warriors,Fox Sports Detroit,NA,NA
+350,1,2021-01-31,3:30 pm ET,Utah Jazz,Denver Nuggets,AT&T Sportsnet - Roc,NA,NBA TV
+351,1,2021-01-31,5:00 pm ET,Philadelphia 76ers,Indiana Pacers,NA,NA,NA
+352,1,2021-01-31,5:00 pm ET,LA Clippers,New York Knicks,Fox Sports Prime Tic,NA,NA
+353,1,2021-01-31,6:00 pm ET,Orlando Magic,Toronto Raptors,SN,Fox Sports Florida,NA
+354,1,2021-01-31,7:00 pm ET,Brooklyn Nets,Washington Wizards,NBC Sports Washingto,YES,NBA TV
+355,1,2021-01-31,7:30 pm ET,Cleveland Cavaliers,Minnesota Timberwolves,Fox Sports Ohio,NA,NA
+356,2,2021-02-01,7:00 pm ET,Minnesota Timberwolves,Cleveland Cavaliers,Fox Sports Ohio,NA,NA
+357,2,2021-02-01,7:30 pm ET,Los Angeles Lakers,Atlanta Hawks,Spectrum SportsNet,NA,NA
+358,2,2021-02-01,7:30 pm ET,Charlotte Hornets,Miami Heat,Fox Sports Sun,Fox Sports Southeast,NA
+359,2,2021-02-01,8:00 pm ET,New York Knicks,Chicago Bulls,NBC Sports Chicago,NA,NA
+360,2,2021-02-01,8:00 pm ET,Portland Trail Blazers,Milwaukee Bucks,NBC Sports Northwest,NA,NA
+361,2,2021-02-01,8:00 pm ET,Sacramento Kings,New Orleans Pelicans,NA,NA,NA
+362,2,2021-02-01,8:00 pm ET,Houston Rockets,Oklahoma City Thunder,Fox Sports Oklahoma,NA,NA
+363,2,2021-02-01,8:30 pm ET,Phoenix Suns,Dallas Mavericks,NA,NA,NBA TV
+364,2,2021-02-01,8:30 pm ET,Memphis Grizzlies,San Antonio Spurs,Fox Sports Southeast,NA,NA
+365,2,2021-02-01,9:00 pm ET,Detroit Pistons,Denver Nuggets,Fox Sports Detroit,NA,NA
+366,3,2021-02-02,7:00 pm ET,Memphis Grizzlies,Indiana Pacers,Fox Sports Southeast,NA,NA
+367,3,2021-02-02,7:00 pm ET,Toronto Raptors,Orlando Magic,Fox Sports Florida,SN,NA
+368,3,2021-02-02,7:30 pm ET,LA Clippers,Brooklyn Nets,Fox Sports Prime Tic,NA,TNT
+369,3,2021-02-02,9:00 pm ET,Detroit Pistons,Utah Jazz,AT&T Sportsnet - Roc,Fox Sports Detroit,NA
+370,3,2021-02-02,10:00 pm ET,Boston Celtics,Golden State Warriors,NA,NA,TNT
+371,4,2021-02-03,7:00 pm ET,Philadelphia 76ers,Charlotte Hornets,Fox Sports Southeast,NA,NA
+372,4,2021-02-03,7:00 pm ET,LA Clippers,Cleveland Cavaliers,Fox Sports Ohio,Fox Sports Prime Tic,NA
+373,4,2021-02-03,7:00 pm ET,Indiana Pacers,Milwaukee Bucks,NA,NA,ESPN
+374,4,2021-02-03,7:30 pm ET,Dallas Mavericks,Atlanta Hawks,NA,NA,NA
+375,4,2021-02-03,7:30 pm ET,Washington Wizards,Miami Heat,Fox Sports Sun,NBC Sports Washingto,NA
+376,4,2021-02-03,8:00 pm ET,New York Knicks,Chicago Bulls,NBC Sports Chicago,NA,NA
+377,4,2021-02-03,8:00 pm ET,Houston Rockets,Oklahoma City Thunder,Fox Sports Oklahoma,NA,NA
+378,4,2021-02-03,8:30 pm ET,Minnesota Timberwolves,San Antonio Spurs,NA,NA,NA
+379,4,2021-02-03,9:30 pm ET,Phoenix Suns,New Orleans Pelicans,NA,NA,ESPN
+380,4,2021-02-03,10:00 pm ET,Boston Celtics,Sacramento Kings,NA,NA,NA
+381,5,2021-02-04,7:00 pm ET,Portland Trail Blazers,Philadelphia 76ers,NBC Sports Northwest,NA,NA
+382,5,2021-02-04,7:30 pm ET,Utah Jazz,Atlanta Hawks,AT&T Sportsnet - Roc,NA,NA
+383,5,2021-02-04,7:30 pm ET,Golden State Warriors,Dallas Mavericks,NA,NA,TNT
+384,5,2021-02-04,8:00 pm ET,Houston Rockets,Memphis Grizzlies,Fox Sports Southeast,NA,NA
+385,5,2021-02-04,10:00 pm ET,Denver Nuggets,Los Angeles Lakers,Spectrum SportsNet,NA,TNT
+386,6,2021-02-05,7:00 pm ET,Utah Jazz,Charlotte Hornets,Fox Sports Southeast,AT&T Sportsnet - Roc,NA
+387,6,2021-02-05,7:00 pm ET,New Orleans Pelicans,Indiana Pacers,NA,NA,NA
+388,6,2021-02-05,7:00 pm ET,Chicago Bulls,Orlando Magic,Fox Sports Florida,NBC Sports Chicago,NA
+389,6,2021-02-05,7:30 pm ET,Toronto Raptors,Brooklyn Nets,YES,TSN,ESPN
+390,6,2021-02-05,7:30 pm ET,Milwaukee Bucks,Cleveland Cavaliers,Fox Sports Ohio,NA,NA
+391,6,2021-02-05,8:00 pm ET,Washington Wizards,Miami Heat,Fox Sports Sun,NBC Sports Washingto,NA
+392,6,2021-02-05,8:00 pm ET,Minnesota Timberwolves,Oklahoma City Thunder,Fox Sports Oklahoma,NA,NA
+393,6,2021-02-05,9:00 pm ET,Detroit Pistons,Phoenix Suns,Fox Sports Detroit,NA,NA
+394,6,2021-02-05,10:00 pm ET,Boston Celtics,LA Clippers,Fox Sports Prime Tic,NA,ESPN
+395,7,2021-02-06,1:00 pm ET,Portland Trail Blazers,New York Knicks,NBC Sports Northwest,NA,NA
+396,7,2021-02-06,5:00 pm ET,Denver Nuggets,Sacramento Kings,NA,NA,NBA TV
+397,7,2021-02-06,7:00 pm ET,Chicago Bulls,Orlando Magic,Fox Sports Florida,NBC Sports Chicago,NA
+398,7,2021-02-06,7:00 pm ET,Brooklyn Nets,Philadelphia 76ers,YES,NA,NA
+399,7,2021-02-06,7:00 pm ET,Memphis Grizzlies,New Orleans Pelicans,Fox Sports Southeast,NA,NA
+400,7,2021-02-06,7:30 pm ET,Toronto Raptors,Atlanta Hawks,TSN,NA,NA
+401,7,2021-02-06,8:00 pm ET,Milwaukee Bucks,Cleveland Cavaliers,Fox Sports Ohio,NA,NA
+402,7,2021-02-06,8:00 pm ET,San Antonio Spurs,Houston Rockets,NA,NA,NA
+403,7,2021-02-06,8:00 pm ET,Minnesota Timberwolves,Oklahoma City Thunder,Fox Sports Oklahoma,NA,NA
+404,7,2021-02-06,8:30 pm ET,Golden State Warriors,Dallas Mavericks,NA,NA,ABC
+405,7,2021-02-06,10:00 pm ET,Detroit Pistons,Los Angeles Lakers,Spectrum SportsNet,Fox Sports Detroit,NA
+406,1,2021-02-07,1:00 pm ET,Portland Trail Blazers,Charlotte Hornets,Fox Sports Southeast,NBC Sports Northwest,NA
+407,1,2021-02-07,1:00 pm ET,Utah Jazz,Indiana Pacers,AT&T Sportsnet - Roc,NA,NA
+408,1,2021-02-07,1:00 pm ET,Miami Heat,New York Knicks,Fox Sports Sun,NA,NA
+409,1,2021-02-07,2:00 pm ET,Boston Celtics,Phoenix Suns,NA,NA,NBA TV
+410,1,2021-02-07,3:00 pm ET,Sacramento Kings,LA Clippers,Fox Sports Prime Tic,NA,NA
+411,2,2021-02-08,7:00 pm ET,Houston Rockets,Charlotte Hornets,Fox Sports Southeast,NA,NBA TV
+412,2,2021-02-08,8:00 pm ET,Washington Wizards,Chicago Bulls,NBC Sports Chicago,NBC Sports Washingto,NA
+413,2,2021-02-08,8:00 pm ET,Toronto Raptors,Memphis Grizzlies,Fox Sports Southeast,TSN,NA
+414,2,2021-02-08,8:30 pm ET,Minnesota Timberwolves,Dallas Mavericks,NA,NA,NA
+415,2,2021-02-08,8:30 pm ET,Golden State Warriors,San Antonio Spurs,NA,NA,NA
+416,2,2021-02-08,9:00 pm ET,Cleveland Cavaliers,Phoenix Suns,Fox Sports Ohio,NA,NA
+417,2,2021-02-08,9:30 pm ET,Milwaukee Bucks,Denver Nuggets,NA,NA,NBA TV
+418,2,2021-02-08,10:00 pm ET,Oklahoma City Thunder,Los Angeles Lakers,Spectrum SportsNet,Fox Sports Oklahoma,NA
+419,3,2021-02-09,7:00 pm ET,Brooklyn Nets,Detroit Pistons,Fox Sports Detroit,YES,NA
+420,3,2021-02-09,7:30 pm ET,New York Knicks,Miami Heat,Fox Sports Sun,NA,NA
+421,3,2021-02-09,7:30 pm ET,Houston Rockets,New Orleans Pelicans,NA,NA,TNT
+422,3,2021-02-09,8:30 pm ET,Golden State Warriors,San Antonio Spurs,NA,NA,NA
+423,3,2021-02-09,10:00 pm ET,Boston Celtics,Utah Jazz,NA,NA,TNT
+424,3,2021-02-09,10:00 pm ET,Orlando Magic,Portland Trail Blazers,NBC Sports Northwest,Fox Sports Florida,NA
+425,3,2021-02-09,10:00 pm ET,Philadelphia 76ers,Sacramento Kings,NA,NA,NA
+426,4,2021-02-10,7:00 pm ET,Toronto Raptors,Washington Wizards,NBC Sports Washingto,TSN,NA
+427,4,2021-02-10,7:30 pm ET,Indiana Pacers,Brooklyn Nets,YES,NA,NA
+428,4,2021-02-10,7:30 pm ET,Atlanta Hawks,Dallas Mavericks,NA,NA,ESPN
+429,4,2021-02-10,8:00 pm ET,New Orleans Pelicans,Chicago Bulls,NBC Sports Chicago,NA,NA
+430,4,2021-02-10,8:00 pm ET,Charlotte Hornets,Memphis Grizzlies,Fox Sports Southeast,Fox Sports Southeast,NA
+431,4,2021-02-10,8:00 pm ET,LA Clippers,Minnesota Timberwolves,Fox Sports Prime Tic,NA,NA
+432,4,2021-02-10,9:00 pm ET,Cleveland Cavaliers,Denver Nuggets,Fox Sports Ohio,NA,NA
+433,4,2021-02-10,10:00 pm ET,Milwaukee Bucks,Phoenix Suns,NA,NA,ESPN
+434,4,2021-02-10,10:00 pm ET,Oklahoma City Thunder,Los Angeles Lakers,Spectrum SportsNet,Fox Sports Oklahoma,NA
+435,5,2021-02-11,7:00 pm ET,Indiana Pacers,Detroit Pistons,Fox Sports Detroit,NA,NA
+436,5,2021-02-11,7:30 pm ET,Miami Heat,Houston Rockets,Fox Sports Sun,NA,TNT
+437,5,2021-02-11,10:00 pm ET,Orlando Magic,Golden State Warriors,Fox Sports Florida,NA,NA
+438,5,2021-02-11,10:00 pm ET,Philadelphia 76ers,Portland Trail Blazers,NA,NA,TNT
+439,6,2021-02-12,7:00 pm ET,Minnesota Timberwolves,Charlotte Hornets,Fox Sports Southeast,NA,NA
+440,6,2021-02-12,7:00 pm ET,New York Knicks,Washington Wizards,NBC Sports Washingto,NA,NA
+441,6,2021-02-12,7:30 pm ET,San Antonio Spurs,Atlanta Hawks,NA,NA,NA
+442,6,2021-02-12,7:30 pm ET,Toronto Raptors,Boston Celtics,TSN,NA,NA
+443,6,2021-02-12,7:30 pm ET,New Orleans Pelicans,Dallas Mavericks,NA,NA,ESPN
+444,6,2021-02-12,8:00 pm ET,LA Clippers,Chicago Bulls,NBC Sports Chicago,Fox Sports Prime Tic,NA
+445,6,2021-02-12,9:00 pm ET,Oklahoma City Thunder,Denver Nuggets,Fox Sports Oklahoma,NA,NA
+446,6,2021-02-12,9:00 pm ET,Milwaukee Bucks,Utah Jazz,AT&T Sportsnet - Roc,NA,NA
+447,6,2021-02-12,10:00 pm ET,Memphis Grizzlies,Los Angeles Lakers,Spectrum SportsNet,Fox Sports Southeast,ESPN
+448,6,2021-02-12,10:00 pm ET,Cleveland Cavaliers,Portland Trail Blazers,NBC Sports Northwest,Fox Sports Ohio,NA
+449,6,2021-02-12,10:00 pm ET,Orlando Magic,Sacramento Kings,Fox Sports Florida,NA,NA
+450,7,2021-02-13,5:00 pm ET,Philadelphia 76ers,Phoenix Suns,NA,NA,NBA TV
+451,7,2021-02-13,7:30 pm ET,Indiana Pacers,Atlanta Hawks,NA,NA,NA
+452,7,2021-02-13,7:30 pm ET,Houston Rockets,New York Knicks,NA,NA,NA
+453,7,2021-02-13,8:30 pm ET,Brooklyn Nets,Golden State Warriors,NA,NA,ABC
+454,7,2021-02-13,9:00 pm ET,Miami Heat,Utah Jazz,AT&T Sportsnet - Roc,Fox Sports Sun,NA
+455,1,2021-02-14,3:30 pm ET,Portland Trail Blazers,Dallas Mavericks,NBC Sports Northwest,NA,NA
+456,1,2021-02-14,6:00 pm ET,Detroit Pistons,Boston Celtics,Fox Sports Detroit,NA,NA
+457,1,2021-02-14,6:00 pm ET,Minnesota Timberwolves,Toronto Raptors,SN,NA,NA
+458,1,2021-02-14,7:00 pm ET,San Antonio Spurs,Charlotte Hornets,Fox Sports Southeast,NA,NA
+459,1,2021-02-14,7:00 pm ET,Milwaukee Bucks,Oklahoma City Thunder,Fox Sports Oklahoma,NA,NA
+460,1,2021-02-14,7:30 pm ET,Los Angeles Lakers,Denver Nuggets,Spectrum SportsNet,NA,NBA TV
+461,1,2021-02-14,8:00 pm ET,Orlando Magic,Phoenix Suns,Fox Sports Florida,NA,NA
+462,1,2021-02-14,9:00 pm ET,Memphis Grizzlies,Sacramento Kings,Fox Sports Southeast,NA,NA
+463,1,2021-02-14,10:00 pm ET,Cleveland Cavaliers,LA Clippers,Fox Sports Prime Tic,Fox Sports Ohio,NBA TV
+464,2,2021-02-15,7:00 pm ET,Chicago Bulls,Indiana Pacers,NBC Sports Chicago,NA,NA
+465,2,2021-02-15,7:00 pm ET,Houston Rockets,Washington Wizards,NBC Sports Washingto,NA,NBA TV
+466,2,2021-02-15,7:30 pm ET,Atlanta Hawks,New York Knicks,NA,NA,NA
+467,2,2021-02-15,9:00 pm ET,Philadelphia 76ers,Utah Jazz,AT&T Sportsnet - Roc,NA,NA
+468,2,2021-02-15,10:00 pm ET,Cleveland Cavaliers,Golden State Warriors,Fox Sports Ohio,NA,NA
+469,2,2021-02-15,10:00 pm ET,Miami Heat,LA Clippers,Fox Sports Prime Tic,Fox Sports Sun,NBA TV
+470,2,2021-02-15,10:00 pm ET,Brooklyn Nets,Sacramento Kings,YES,NA,NA
+471,3,2021-02-16,7:00 pm ET,Denver Nuggets,Boston Celtics,NA,NA,NA
+472,3,2021-02-16,7:00 pm ET,San Antonio Spurs,Detroit Pistons,Fox Sports Detroit,NA,NA
+473,3,2021-02-16,7:30 pm ET,New Orleans Pelicans,Memphis Grizzlies,NA,NA,TNT
+474,3,2021-02-16,8:00 pm ET,Toronto Raptors,Milwaukee Bucks,SN,NA,NA
+475,3,2021-02-16,8:00 pm ET,Los Angeles Lakers,Minnesota Timberwolves,Spectrum SportsNet,NA,NA
+476,3,2021-02-16,8:00 pm ET,Portland Trail Blazers,Oklahoma City Thunder,Fox Sports Oklahoma,NBC Sports Northwest,NA
+477,3,2021-02-16,10:00 pm ET,Brooklyn Nets,Phoenix Suns,YES,NA,TNT
+478,4,2021-02-17,7:00 pm ET,Chicago Bulls,Charlotte Hornets,Fox Sports Southeast,NBC Sports Chicago,NA
+479,4,2021-02-17,7:00 pm ET,San Antonio Spurs,Cleveland Cavaliers,Fox Sports Ohio,NA,NA
+480,4,2021-02-17,7:00 pm ET,New York Knicks,Orlando Magic,Fox Sports Florida,NA,NA
+481,4,2021-02-17,7:00 pm ET,Denver Nuggets,Washington Wizards,NBC Sports Washingto,NA,NA
+482,4,2021-02-17,7:30 pm ET,Atlanta Hawks,Boston Celtics,NA,NA,NA
+483,4,2021-02-17,7:30 pm ET,Houston Rockets,Philadelphia 76ers,NA,NA,ESPN
+484,4,2021-02-17,8:00 pm ET,Indiana Pacers,Minnesota Timberwolves,NA,NA,NA
+485,4,2021-02-17,8:00 pm ET,Portland Trail Blazers,New Orleans Pelicans,NBC Sports Northwest,NA,NA
+486,4,2021-02-17,8:30 pm ET,Detroit Pistons,Dallas Mavericks,Fox Sports Detroit,NA,NA
+487,4,2021-02-17,10:00 pm ET,Miami Heat,Golden State Warriors,Fox Sports Sun,NA,ESPN
+488,4,2021-02-17,10:00 pm ET,Utah Jazz,LA Clippers,Fox Sports Prime Tic,AT&T Sportsnet - Roc,NA
+489,5,2021-02-18,7:30 pm ET,Toronto Raptors,Milwaukee Bucks,TSN,NA,TNT
+490,5,2021-02-18,10:00 pm ET,Brooklyn Nets,Los Angeles Lakers,NA,NA,TNT
+491,5,2021-02-18,10:00 pm ET,Miami Heat,Sacramento Kings,Fox Sports Sun,NA,NA
+492,6,2021-02-19,7:00 pm ET,Denver Nuggets,Charlotte Hornets,Fox Sports Southeast,NA,NA
+493,6,2021-02-19,7:00 pm ET,Golden State Warriors,Orlando Magic,Fox Sports Florida,NA,NA
+494,6,2021-02-19,7:00 pm ET,Chicago Bulls,Philadelphia 76ers,NBC Sports Chicago,NA,ESPN
+495,6,2021-02-19,7:30 pm ET,Atlanta Hawks,Boston Celtics,NA,NA,NA
+496,6,2021-02-19,8:00 pm ET,Detroit Pistons,Memphis Grizzlies,Fox Sports Southeast,Fox Sports Detroit,NA
+497,6,2021-02-19,8:00 pm ET,Oklahoma City Thunder,Milwaukee Bucks,Fox Sports Oklahoma,NA,NA
+498,6,2021-02-19,8:00 pm ET,Toronto Raptors,Minnesota Timberwolves,TSN,NA,NA
+499,6,2021-02-19,8:00 pm ET,Phoenix Suns,New Orleans Pelicans,NA,NA,NA
+500,6,2021-02-19,9:30 pm ET,Dallas Mavericks,Houston Rockets,NA,NA,ESPN
+501,6,2021-02-19,10:00 pm ET,Utah Jazz,LA Clippers,Fox Sports Prime Tic,AT&T Sportsnet - Roc,NA
+502,7,2021-02-20,5:00 pm ET,San Antonio Spurs,New York Knicks,NA,NA,NBA TV
+503,7,2021-02-20,7:00 pm ET,Golden State Warriors,Charlotte Hornets,Fox Sports Southeast,NA,NA
+504,7,2021-02-20,8:00 pm ET,Sacramento Kings,Chicago Bulls,NBC Sports Chicago,NA,NA
+505,7,2021-02-20,8:00 pm ET,Indiana Pacers,Houston Rockets,NA,NA,NA
+506,7,2021-02-20,8:00 pm ET,Phoenix Suns,Memphis Grizzlies,Fox Sports Southeast,NA,NA
+507,7,2021-02-20,8:30 pm ET,Miami Heat,Los Angeles Lakers,NA,NA,ABC
+508,7,2021-02-20,10:00 pm ET,Washington Wizards,Portland Trail Blazers,NBC Sports Northwest,NBC Sports Washingto,NA
+509,1,2021-02-21,3:30 pm ET,Boston Celtics,New Orleans Pelicans,NA,NA,ABC
+510,1,2021-02-21,6:00 pm ET,Oklahoma City Thunder,Cleveland Cavaliers,Fox Sports Ohio,Fox Sports Oklahoma,NA
+511,1,2021-02-21,6:00 pm ET,Detroit Pistons,Orlando Magic,Fox Sports Florida,Fox Sports Detroit,NA
+512,1,2021-02-21,6:00 pm ET,Philadelphia 76ers,Toronto Raptors,TSN,NA,NA
+513,1,2021-02-21,7:00 pm ET,Minnesota Timberwolves,New York Knicks,NA,NA,NA
+514,1,2021-02-21,7:30 pm ET,Denver Nuggets,Atlanta Hawks,NA,NA,NA
+515,1,2021-02-21,8:00 pm ET,Sacramento Kings,Milwaukee Bucks,NA,NA,NA
+516,1,2021-02-21,8:00 pm ET,Brooklyn Nets,LA Clippers,Fox Sports Prime Tic,YES,ESPN
+517,2,2021-02-22,7:00 pm ET,San Antonio Spurs,Indiana Pacers,NA,NA,NBA TV
+518,2,2021-02-22,8:00 pm ET,Chicago Bulls,Houston Rockets,NBC Sports Chicago,NA,NA
+519,2,2021-02-22,8:00 pm ET,Miami Heat,Oklahoma City Thunder,Fox Sports Oklahoma,Fox Sports Sun,NA
+520,2,2021-02-22,8:30 pm ET,Memphis Grizzlies,Dallas Mavericks,Fox Sports Southeast,NA,NA
+521,2,2021-02-22,9:00 pm ET,Portland Trail Blazers,Phoenix Suns,NBC Sports Northwest,NA,NA
+522,2,2021-02-22,9:00 pm ET,Charlotte Hornets,Utah Jazz,AT&T Sportsnet - Roc,Fox Sports Southeast,NA
+523,2,2021-02-22,10:00 pm ET,Washington Wizards,Los Angeles Lakers,Spectrum SportsNet,NBC Sports Washingto,NBA TV
+524,3,2021-02-23,7:00 pm ET,Atlanta Hawks,Cleveland Cavaliers,Fox Sports Ohio,NA,NA
+525,3,2021-02-23,7:00 pm ET,Detroit Pistons,Orlando Magic,Fox Sports Florida,Fox Sports Detroit,NA
+526,3,2021-02-23,7:30 pm ET,Sacramento Kings,Brooklyn Nets,YES,NA,NA
+527,3,2021-02-23,7:30 pm ET,Golden State Warriors,New York Knicks,NA,NA,NA
+528,3,2021-02-23,7:30 pm ET,Philadelphia 76ers,Toronto Raptors,SN,NA,NA
+529,3,2021-02-23,7:30 pm ET,Boston Celtics,Dallas Mavericks,NA,NA,TNT
+530,3,2021-02-23,8:00 pm ET,Minnesota Timberwolves,Milwaukee Bucks,NA,NA,NA
+531,3,2021-02-23,10:00 pm ET,Portland Trail Blazers,Denver Nuggets,NA,NA,TNT
+532,3,2021-02-23,10:00 pm ET,Washington Wizards,LA Clippers,Fox Sports Prime Tic,NBC Sports Washingto,NA
+533,4,2021-02-24,7:00 pm ET,Golden State Warriors,Indiana Pacers,NA,NA,NA
+534,4,2021-02-24,7:30 pm ET,Boston Celtics,Atlanta Hawks,NA,NA,NA
+535,4,2021-02-24,7:30 pm ET,Houston Rockets,Cleveland Cavaliers,Fox Sports Ohio,NA,NA
+536,4,2021-02-24,7:30 pm ET,Toronto Raptors,Miami Heat,Fox Sports Sun,SN,ESPN
+537,4,2021-02-24,8:00 pm ET,Minnesota Timberwolves,Chicago Bulls,NBC Sports Chicago,NA,NA
+538,4,2021-02-24,8:00 pm ET,Detroit Pistons,New Orleans Pelicans,Fox Sports Detroit,NA,NA
+539,4,2021-02-24,8:00 pm ET,San Antonio Spurs,Oklahoma City Thunder,Fox Sports Oklahoma,NA,NA
+540,4,2021-02-24,9:00 pm ET,Charlotte Hornets,Phoenix Suns,Fox Sports Southeast,NA,NA
+541,4,2021-02-24,10:00 pm ET,Los Angeles Lakers,Utah Jazz,AT&T Sportsnet - Roc,Spectrum SportsNet,ESPN
+542,5,2021-02-25,7:00 pm ET,Dallas Mavericks,Philadelphia 76ers,NA,NA,TNT
+543,5,2021-02-25,7:30 pm ET,Orlando Magic,Brooklyn Nets,YES,Fox Sports Florida,NA
+544,5,2021-02-25,7:30 pm ET,Sacramento Kings,New York Knicks,NA,NA,NA
+545,5,2021-02-25,8:00 pm ET,LA Clippers,Memphis Grizzlies,Fox Sports Southeast,Fox Sports Prime Tic,NA
+546,5,2021-02-25,9:00 pm ET,Washington Wizards,Denver Nuggets,NBC Sports Washingto,NA,NA
+547,5,2021-02-25,9:30 pm ET,New Orleans Pelicans,Milwaukee Bucks,NA,NA,TNT
+548,6,2021-02-26,7:00 pm ET,Sacramento Kings,Detroit Pistons,Fox Sports Detroit,NA,NA
+549,6,2021-02-26,7:30 pm ET,Indiana Pacers,Boston Celtics,NA,NA,ESPN
+550,6,2021-02-26,7:30 pm ET,Houston Rockets,Toronto Raptors,TSN,NA,NA
+551,6,2021-02-26,8:00 pm ET,Utah Jazz,Miami Heat,Fox Sports Sun,AT&T Sportsnet - Roc,NA
+552,6,2021-02-26,8:00 pm ET,Phoenix Suns,Chicago Bulls,NBC Sports Chicago,NA,NA
+553,6,2021-02-26,8:00 pm ET,LA Clippers,Memphis Grizzlies,Fox Sports Southeast,Fox Sports Prime Tic,NA
+554,6,2021-02-26,8:00 pm ET,Atlanta Hawks,Oklahoma City Thunder,Fox Sports Oklahoma,NA,NA
+555,6,2021-02-26,10:00 pm ET,Charlotte Hornets,Golden State Warriors,Fox Sports Southeast,NA,NA
+556,6,2021-02-26,10:00 pm ET,Portland Trail Blazers,Los Angeles Lakers,Spectrum SportsNet,NBC Sports Northwest,ESPN
+557,7,2021-02-27,3:00 pm ET,Cleveland Cavaliers,Philadelphia 76ers,Fox Sports Ohio,NA,NA
+558,7,2021-02-27,6:00 pm ET,New Orleans Pelicans,San Antonio Spurs,NA,NA,NBA TV
+559,7,2021-02-27,7:00 pm ET,Indiana Pacers,New York Knicks,NA,NA,NA
+560,7,2021-02-27,7:00 pm ET,Utah Jazz,Orlando Magic,Fox Sports Florida,AT&T Sportsnet - Roc,NA
+561,7,2021-02-27,7:00 pm ET,Minnesota Timberwolves,Washington Wizards,NBC Sports Washingto,NA,NA
+562,7,2021-02-27,8:00 pm ET,Denver Nuggets,Oklahoma City Thunder,Fox Sports Oklahoma,NA,NA
+563,7,2021-02-27,8:30 pm ET,Dallas Mavericks,Brooklyn Nets,NA,NA,ABC
+564,1,2021-02-28,3:30 pm ET,LA Clippers,Milwaukee Bucks,NA,NA,ABC
+565,1,2021-02-28,6:00 pm ET,New York Knicks,Detroit Pistons,Fox Sports Detroit,NA,NA
+566,1,2021-02-28,6:00 pm ET,Atlanta Hawks,Miami Heat,Fox Sports Sun,NA,NA
+567,1,2021-02-28,6:00 pm ET,Chicago Bulls,Toronto Raptors,SN,NBC Sports Chicago,NA
+568,1,2021-02-28,7:00 pm ET,Washington Wizards,Boston Celtics,NBC Sports Washingto,NA,NA
+569,1,2021-02-28,7:00 pm ET,Memphis Grizzlies,Houston Rockets,Fox Sports Southeast,NA,NA
+570,1,2021-02-28,8:00 pm ET,Phoenix Suns,Minnesota Timberwolves,NA,NA,NA
+571,1,2021-02-28,8:00 pm ET,Golden State Warriors,Los Angeles Lakers,Spectrum SportsNet,NA,ESPN
+572,1,2021-02-28,9:00 pm ET,Charlotte Hornets,Sacramento Kings,Fox Sports Southeast,NA,NA
+573,2,2021-03-01,7:00 pm ET,Dallas Mavericks,Orlando Magic,Fox Sports Florida,NA,NA
+574,2,2021-03-01,7:00 pm ET,Indiana Pacers,Philadelphia 76ers,NA,NA,NA
+575,2,2021-03-01,8:00 pm ET,Denver Nuggets,Chicago Bulls,NBC Sports Chicago,NA,NA
+576,2,2021-03-01,8:00 pm ET,Cleveland Cavaliers,Houston Rockets,Fox Sports Ohio,NA,NA
+577,2,2021-03-01,8:00 pm ET,Utah Jazz,New Orleans Pelicans,AT&T Sportsnet - Roc,NA,NBA TV
+578,2,2021-03-01,8:30 pm ET,Brooklyn Nets,San Antonio Spurs,YES,NA,NA
+579,2,2021-03-01,10:30 pm ET,Charlotte Hornets,Portland Trail Blazers,NBC Sports Northwest,Fox Sports Southeast,NBA TV
+580,3,2021-03-02,7:00 pm ET,Memphis Grizzlies,Washington Wizards,NBC Sports Washingto,Fox Sports Southeast,NA
+581,3,2021-03-02,7:30 pm ET,LA Clippers,Boston Celtics,Fox Sports Prime Tic,NA,TNT
+582,3,2021-03-02,7:30 pm ET,Atlanta Hawks,Miami Heat,Fox Sports Sun,NA,NA
+583,3,2021-03-02,7:30 pm ET,Detroit Pistons,Toronto Raptors,TSN,Fox Sports Detroit,NA
+584,3,2021-03-02,8:00 pm ET,Denver Nuggets,Milwaukee Bucks,NA,NA,NA
+585,3,2021-03-02,8:30 pm ET,New York Knicks,San Antonio Spurs,NA,NA,NA
+586,3,2021-03-02,10:00 pm ET,Phoenix Suns,Los Angeles Lakers,Spectrum SportsNet,NA,TNT
+587,4,2021-03-03,7:00 pm ET,Indiana Pacers,Cleveland Cavaliers,Fox Sports Ohio,NA,NA
+588,4,2021-03-03,7:00 pm ET,Atlanta Hawks,Orlando Magic,Fox Sports Florida,NA,NA
+589,4,2021-03-03,7:00 pm ET,Utah Jazz,Philadelphia 76ers,AT&T Sportsnet - Roc,NA,NA
+590,4,2021-03-03,7:30 pm ET,Brooklyn Nets,Houston Rockets,YES,NA,ESPN
+591,4,2021-03-03,8:00 pm ET,Charlotte Hornets,Minnesota Timberwolves,Fox Sports Southeast,NA,NA
+592,4,2021-03-03,8:00 pm ET,Chicago Bulls,New Orleans Pelicans,NBC Sports Chicago,NA,NA
+593,4,2021-03-03,8:30 pm ET,Oklahoma City Thunder,Dallas Mavericks,Fox Sports Oklahoma,NA,NA
+594,4,2021-03-03,10:00 pm ET,Golden State Warriors,Portland Trail Blazers,NBC Sports Northwest,NA,ESPN
+595,4,2021-03-03,10:00 pm ET,Los Angeles Lakers,Sacramento Kings,Spectrum SportsNet,NA,NA
+596,5,2021-03-04,7:00 pm ET,Toronto Raptors,Boston Celtics,TSN,NA,TNT
+597,5,2021-03-04,7:00 pm ET,Denver Nuggets,Indiana Pacers,NA,NA,NA
+598,5,2021-03-04,7:00 pm ET,LA Clippers,Washington Wizards,NBC Sports Washingto,Fox Sports Prime Tic,NA
+599,5,2021-03-04,8:00 pm ET,Milwaukee Bucks,Memphis Grizzlies,Fox Sports Southeast,NA,NA
+600,5,2021-03-04,8:30 pm ET,Oklahoma City Thunder,San Antonio Spurs,Fox Sports Oklahoma,NA,NA
+601,5,2021-03-04,9:30 pm ET,Miami Heat,New Orleans Pelicans,NA,NA,TNT
+602,5,2021-03-04,10:00 pm ET,Sacramento Kings,Portland Trail Blazers,NBC Sports Northwest,NA,NA
