@@ -562,7 +562,7 @@ ui <- fluidPage(
                     tags$div(style = "float: left",
                              tags$p(tags$u(tags$strong("Frequency Options")),
                                     tags$br(),
-                                    tags$strong("Always: "), "This is my team. I want to watch literally every single one of their games.",
+                                    tags$strong("Always: "), "This is my team. I want to watch literally every single one of their games. (Select no more than one \"Always\" team.)",
                                     tags$br(),
                                     tags$strong("Often: "), "This is one of my favorite teams. I want to watch them a lot.",
                                     tags$br(),
