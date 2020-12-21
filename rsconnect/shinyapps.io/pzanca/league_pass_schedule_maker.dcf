@@ -5,8 +5,8 @@ account: pzanca
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 3420565
-bundleId: 4012562
+bundleId: 4015894
 url: https://pzanca.shinyapps.io/league_pass_schedule_maker/
-when: 1608492684.83103
+when: 1608569915.965
 asMultiple: FALSE
 asStatic: FALSE

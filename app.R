@@ -69,7 +69,7 @@ ui <- fluidPage(
                                    ),
                                    tags$td(
                                      selectInput(inputId = "Early_2", label = NULL, width = "130px",
-                                                 choices = time_list, selected = "12:00 pm ET")
+                                                 choices = time_list, selected = "6:00 pm ET")
                                    ),
                                    tags$td(
                                      selectInput(inputId = "Late_2", label = NULL, width = "130px",
@@ -88,7 +88,7 @@ ui <- fluidPage(
                                    ),
                                    tags$td(
                                      selectInput(inputId = "Early_3", label = NULL, width = "130px",
-                                                 choices = time_list, selected = "12:00 pm ET")
+                                                 choices = time_list, selected = "6:00 pm ET")
                                    ),
                                    tags$td(
                                      selectInput(inputId = "Late_3", label = NULL, width = "130px",
@@ -107,7 +107,7 @@ ui <- fluidPage(
                                    ),
                                    tags$td(
                                      selectInput(inputId = "Early_4", label = NULL, width = "130px",
-                                                 choices = time_list, selected = "12:00 pm ET")
+                                                 choices = time_list, selected = "6:00 pm ET")
                                    ),
                                    tags$td(
                                      selectInput(inputId = "Late_4", label = NULL, width = "130px",
@@ -126,7 +126,7 @@ ui <- fluidPage(
                                    ),
                                    tags$td(
                                      selectInput(inputId = "Early_5", label = NULL, width = "130px",
-                                                 choices = time_list, selected = "12:00 pm ET")
+                                                 choices = time_list, selected = "6:00 pm ET")
                                    ),
                                    tags$td(
                                      selectInput(inputId = "Late_5", label = NULL, width = "130px",
@@ -145,7 +145,7 @@ ui <- fluidPage(
                                    ),
                                    tags$td(
                                      selectInput(inputId = "Early_6", label = NULL, width = "130px",
-                                                 choices = time_list, selected = "12:00 pm ET")
+                                                 choices = time_list, selected = "6:00 pm ET")
                                    ),
                                    tags$td(
                                      selectInput(inputId = "Late_6", label = NULL, width = "130px",
@@ -242,7 +242,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_1", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                     )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -252,7 +252,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_2", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -262,7 +262,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_3", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -272,7 +272,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_4", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -282,7 +282,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_5", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -292,7 +292,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_6", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -302,7 +302,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_7", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -312,7 +312,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_8", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -322,7 +322,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_9", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -332,7 +332,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_10", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -342,7 +342,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_11", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -352,7 +352,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_12", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -362,7 +362,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_13", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -372,7 +372,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_14", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -382,7 +382,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_15", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           )
                                           )
@@ -413,7 +413,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_16", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -423,7 +423,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_17", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -433,7 +433,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_18", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -443,7 +443,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_19", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -453,7 +453,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_20", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -463,7 +463,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_21", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -473,7 +473,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_22", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -483,7 +483,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_23", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -493,7 +493,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_24", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -503,7 +503,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_25", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -513,7 +513,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_26", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -523,7 +523,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_27", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -533,7 +533,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_28", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -543,7 +543,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_29", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           ),
                                           tags$tr(style = "height: 25px",
@@ -553,7 +553,7 @@ ui <- fluidPage(
                                                           radioButtons(inputId = "Team_30", label = NULL, inline = TRUE, width = '400px',
                                                                        choiceNames = list("", "", "", "", ""),
                                                                        choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 2)
+                                                                       selected = 1)
                                                   )
                                           )
                                           )
@@ -562,7 +562,7 @@ ui <- fluidPage(
                     tags$div(style = "float: left",
                              tags$p(tags$u(tags$strong("Frequency Options")),
                                     tags$br(),
-                                    tags$strong("Always: "), "This is my team. I want to watch literally every single one of their games. (Select no more than one \"Always\" team.)",
+                                    tags$strong("Always: "), "This is my team. I want to watch literally every single one of their games within my day/time restrictions. (Select no more than one \"Always\" team.)",
                                     tags$br(),
                                     tags$strong("Often: "), "This is one of my favorite teams. I want to watch them a lot.",
                                     tags$br(),
