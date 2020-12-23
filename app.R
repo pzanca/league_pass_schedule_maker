@@ -5,6 +5,14 @@ library(tidyverse)
 library(lubridate)
 library(lpSolve)
 
+# Load files
+
+#Read in the NBA schedule
+nba_schedule <- read_csv("NBA_Schedule_Final.csv")
+
+#Import timeslot matrix
+timeslots <- read_csv("Timeslots.csv")
+
 #### UI ####
 
 time_list <- list("12:00 pm ET", "12:30 pm ET", "1:00 pm ET", "1:30 pm ET", "2:00 pm ET", "2:30 pm ET",
@@ -19,6 +27,7 @@ watch_list <- list("This is my team. Show me every one of their games. No joke."
                    "Never show me this team. Ever. Don't ask.")
 
 ui <- fluidPage(
+  title = "NBA League Pass Schedule Maker",
   
   tags$h1("NBA League Pass Schedule Maker"),
   tags$h5("Built by Peter Zanca"),
@@ -626,9 +635,7 @@ server <- function(input, output, session) {
       ) %>%
         mutate(PREF = as.numeric(PREF))
       
-      #Read in the NBA schedule
-      nba_schedule <- read_csv("NBA_Schedule_Final.csv")
-      
+
       #Filter to eligible games based on channels, days, and team prefs
       elig_games <- nba_schedule %>%
         #Filter to games starting today
@@ -682,9 +689,7 @@ server <- function(input, output, session) {
       #Identify unique dates among games
       unique_dates <- distinct(elig_games, DATE)
       
-      #Import timeslot matrix
-      timeslots <- read_csv("Timeslots.csv")
-      
+
       #Create timeslot constraint matrix: This ensures you don't get overlapping games
       time_prep <- elig_games %>%
         select(DATE, TIME) %>%
