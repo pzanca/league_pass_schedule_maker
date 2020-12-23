@@ -24,592 +24,551 @@ ui <- fluidPage(
   tags$h5("Built by Peter Zanca"),
   tags$p("Every season, I tell myself I'm going to get my money's worth out of NBA League Pass and watch every team in the league on a regular basis. But after a week or two, I always end up coming back to my favorites over and over again. This year I'm using linear programming to plan out an optimal schedule of games that'll allow me to watch the teams I like while also forcing me to take my medicine on teams I'm less likely to watch."),
   tags$p("This Shiny app will allow you to build your own \"optimal\" schedule. Just plug in (A) when you watch games, (B) how many you watch on a given day, (C) what channels you're limited to, and (D) how often you want to watch each team. Happy viewing!"),
-  tags$div(style='width: 1750px;',
-           tags$div(style='float: left; width: 550px;',
-                    tags$h4("When do you watch hoops?"),
-                    tags$table(style = "table-layout: fixed; width: 500px;text-align: left; vertical-align: middle;",
-                               tags$style(HTML(".radio-inline {padding-left: 47px;margin-right: 20px;vertical-align: top}")),
-                               tags$tbody(
-                                 tags$tr(
-                                   tags$th(style = "width: 100px; text-align: center",
-                                           "Day"),
-                                   tags$th(style = "width: 75px;",
-                                           "Include"),
-                                   tags$th(style = "width: 135px;",
-                                           "Earliest Start Time"),
-                                   tags$th(style = "width: 135px;",
-                                           "Latest Start Time"),
-                                   tags$th(style = "width: 100px;",
-                                           "Max Games")
-                                 ),
-                                 tags$tr(
-                                   tags$td("Sunday", align = "center"),
-                                   tags$td(
-                                     style = "display: inline-block; margin-left: 15px;",
-                                     checkboxInput(inputId = "Day_1", label = NULL, width = "15px", value = TRUE)
-                                   ),
-                                   tags$td(
-                                     selectInput(inputId = "Early_1", label = NULL, width = "130px",
-                                                 choices = time_list, selected = "12:00 pm ET")
-                                   ),
-                                   tags$td(
-                                     selectInput(inputId = "Late_1", label = NULL, width = "130px",
-                                                 choices = time_list, selected = "10:30 pm ET")
-                                   ),
-                                   tags$td(
-                                     numericInput(inputId = "Max_1", label = NULL, width = "65px",
-                                                  value = 1, min = 0, max = 5, step = 1)
-                                   )
-                                 ),
-                                 tags$tr(
-                                   tags$td("Monday", align = "center"),
-                                   tags$td(
-                                     style = "display: inline-block; margin-left: 15px;",
-                                     checkboxInput(inputId = "Day_2", label = NULL, width = "15px", value = TRUE)
-                                   ),
-                                   tags$td(
-                                     selectInput(inputId = "Early_2", label = NULL, width = "130px",
-                                                 choices = time_list, selected = "6:00 pm ET")
-                                   ),
-                                   tags$td(
-                                     selectInput(inputId = "Late_2", label = NULL, width = "130px",
-                                                 choices = time_list, selected = "10:30 pm ET")
-                                   ),
-                                   tags$td(
-                                     numericInput(inputId = "Max_2", label = NULL, width = "65px",
-                                                  value = 1, min = 0, max = 5, step = 1)
-                                   )
-                                 ),
-                                 tags$tr(
-                                   tags$td("Tuesday", align = "center"),
-                                   tags$td(
-                                     style = "display: inline-block; margin-left: 15px;",
-                                     checkboxInput(inputId = "Day_3", label = NULL, width = "15px", value = TRUE)
-                                   ),
-                                   tags$td(
-                                     selectInput(inputId = "Early_3", label = NULL, width = "130px",
-                                                 choices = time_list, selected = "6:00 pm ET")
-                                   ),
-                                   tags$td(
-                                     selectInput(inputId = "Late_3", label = NULL, width = "130px",
-                                                 choices = time_list, selected = "10:30 pm ET")
-                                   ),
-                                   tags$td(
-                                     numericInput(inputId = "Max_3", label = NULL, width = "65px",
-                                                  value = 1, min = 0, max = 5, step = 1)
-                                   )
-                                 ),
-                                 tags$tr(
-                                   tags$td("Wednesday", align = "center"),
-                                   tags$td(
-                                     style = "display: inline-block; margin-left: 15px;",
-                                     checkboxInput(inputId = "Day_4", label = NULL, width = "15px", value = TRUE)
-                                   ),
-                                   tags$td(
-                                     selectInput(inputId = "Early_4", label = NULL, width = "130px",
-                                                 choices = time_list, selected = "6:00 pm ET")
-                                   ),
-                                   tags$td(
-                                     selectInput(inputId = "Late_4", label = NULL, width = "130px",
-                                                 choices = time_list, selected = "10:30 pm ET")
-                                   ),
-                                   tags$td(
-                                     numericInput(inputId = "Max_4", label = NULL, width = "65px",
-                                                  value = 1, min = 0, max = 5, step = 1)
-                                   )
-                                 ),
-                                 tags$tr(
-                                   tags$td("Thursday", align = "center"),
-                                   tags$td(
-                                     style = "display: inline-block; margin-left: 15px;",
-                                     checkboxInput(inputId = "Day_5", label = NULL, width = "15px", value = TRUE)
-                                   ),
-                                   tags$td(
-                                     selectInput(inputId = "Early_5", label = NULL, width = "130px",
-                                                 choices = time_list, selected = "6:00 pm ET")
-                                   ),
-                                   tags$td(
-                                     selectInput(inputId = "Late_5", label = NULL, width = "130px",
-                                                 choices = time_list, selected = "10:30 pm ET")
-                                   ),
-                                   tags$td(
-                                     numericInput(inputId = "Max_5", label = NULL, width = "65px",
-                                                  value = 1, min = 0, max = 5, step = 1)
-                                   )
-                                 ),
-                                 tags$tr(
-                                   tags$td("Friday", align = "center"),
-                                   tags$td(
-                                     style = "display: inline-block; margin-left: 15px;",
-                                     checkboxInput(inputId = "Day_6", label = NULL, width = "15px", value = TRUE)
-                                   ),
-                                   tags$td(
-                                     selectInput(inputId = "Early_6", label = NULL, width = "130px",
-                                                 choices = time_list, selected = "6:00 pm ET")
-                                   ),
-                                   tags$td(
-                                     selectInput(inputId = "Late_6", label = NULL, width = "130px",
-                                                 choices = time_list, selected = "10:30 pm ET")
-                                   ),
-                                   tags$td(
-                                     numericInput(inputId = "Max_6", label = NULL, width = "65px",
-                                                  value = 1, min = 0, max = 5, step = 1)
-                                   )
-                                 ),
-                                 tags$tr(
-                                   tags$td("Saturday", align = "center"),
-                                   tags$td(
-                                     style = "display: inline-block; margin-left: 15px;",
-                                     checkboxInput(inputId = "Day_7", label = NULL, width = "15px", value = TRUE)
-                                   ),
-                                   tags$td(
-                                     selectInput(inputId = "Early_7", label = NULL, width = "130px",
-                                                 choices = time_list, selected = "12:00 pm ET")
-                                   ),
-                                   tags$td(
-                                     selectInput(inputId = "Late_7", label = NULL, width = "130px",
-                                                 choices = time_list, selected = "10:30 pm ET")
-                                   ),
-                                   tags$td(
-                                     numericInput(inputId = "Max_7", label = NULL, width = "65px",
-                                                  value = 1, min = 0, max = 5, step = 1)
-                                   )
-                                 )
-                               )
-                    ),
-                    tags$h4("Any channel restrictions?"),
-                    tags$table(style = "table-layout: fixed; width: 250px;text-align: left; vertical-align: middle;",
-                               tags$tbody(
-                                 tags$tr(
-                                   tags$td(style = "width = 175px",
-                                           "No ABC"),
-                                   tags$td(style = "width = 75px",
-                                     checkboxInput(inputId = "ABC", label = NULL, width = "15px")
-                                   )
-                                 ),
-                                 tags$tr(
-                                   tags$td("No ESPN"),
-                                   tags$td(
-                                     checkboxInput(inputId = "ESPN", label = NULL, width = "15px")
-                                   )
-                                 ),
-                                 tags$tr(
-                                   tags$td("No TNT"),
-                                   tags$td(
-                                     checkboxInput(inputId = "TNT", label = NULL, width = "15px")
-                                   )
-                                 ),
-                                 tags$tr(
-                                   tags$td("No NBA TV"),
-                                   tags$td(
-                                     checkboxInput(inputId = "NBA_TV", label = NULL, width = "15px")
-                                   )
-                                 ),
-                                 tags$tr(
-                                   tags$td("No League Pass"),
-                                   tags$td(
-                                     checkboxInput(inputId = "LP", label = NULL, width = "15px")
-                                   )
-                                 )
-                               )
-                    ),
-                    textOutput(outputId = "No_LP")
-                    ),
-           tags$div(style='float: left; width: 1200px; overflow: auto',
-                    tags$h4("How often do you want to watch each team?"),
-                    tags$div(style='float: left; width: 600px;',
-                             tags$table(style = "table-layout: fixed; width: 400px; text-align: left; vertical-align: top;",
-                                        tags$style(HTML(".radio-inline {padding-left: 47px;margin-right: 20px;vertical-align: top}")),
-                                        tags$tbody(
-                                          tags$tr(style = "height: 25px",
-                                                  tags$th(style = "width: 200px; text-align: center; vertical-align: middle;",
-                                                          "Team"),
-                                                  tags$th(style = "width: 80px; text-align: center; vertical-align: middle;",
-                                                          "Always"),
-                                                  tags$th(style = "width: 80px; text-align: center; vertical-align: middle;",
-                                                          "Often"),
-                                                  tags$th(style = "width: 80px; text-align: center; vertical-align: middle;",
-                                                          "Sometimes"),
-                                                  tags$th(style = "width: 80px; text-align: center; vertical-align: middle;",
-                                                          "At Least Once"),
-                                                  tags$th(style = "width: 80px; text-align: center; vertical-align: middle;",
-                                                          "Never")
-                                          ),
-                                          tags$tr(style = "height: 10px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Atlanta Hawks"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_1", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                    )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Boston Celtics"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_2", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Brooklyn Nets"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_3", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Charlotte Hornets"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_4", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Chicago Bulls"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_5", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Cleveland Cavaliers"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_6", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Dallas Mavericks"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_7", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Denver Nuggets"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_8", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Detroit Pistons"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_9", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Golden State Warriors"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_10", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Houston Rockets"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_11", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Indiana Pacers"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_12", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Los Angeles Clippers"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_13", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Los Angeles Lakers"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_14", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Memphis Grizzlies"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_15", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          )
-                                          )
-                                        )
-                             ),
-                    tags$div(style='float: left; width: 400px;',
-                             tags$table(style = "table-layout: fixed; width: 400px; text-align: left; vertical-align: middle;",
-                                        tags$style(HTML(".radio-inline {padding-left: 47px;margin-right: 20px;}")),
-                                        tags$tbody(
-                                          tags$tr(style = "height: 25px",
-                                                  tags$th(style = "width: 200px; text-align: center; vertical-align: middle;",
-                                                          "Team"),
-                                                  tags$th(style = "width: 80px; text-align: center; vertical-align: middle;",
-                                                          "Always"),
-                                                  tags$th(style = "width: 80px; text-align: center; vertical-align: middle;",
-                                                          "Often"),
-                                                  tags$th(style = "width: 80px; text-align: center; vertical-align: middle;",
-                                                          "Sometimes"),
-                                                  tags$th(style = "width: 80px; text-align: center; vertical-align: middle;",
-                                                          "At Least Once"),
-                                                  tags$th(style = "width: 80px; text-align: center; vertical-align: middle;",
-                                                          "Never")
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Miami Heat"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_16", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Milwaukee Bucks"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_17", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Minnesota Timberwolves"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_18", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "New Orleans Pelicans"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_19", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "New York Knicks"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_20", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Oklahoma City Thunder"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_21", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Orlando Magic"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_22", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Philadelphia 76ers"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_23", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Phoenix Suns"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_24", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Portland Trail Blazers"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_25", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Sacramento Kings"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_26", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "San Antonio Spurs"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_27", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Toronto Raptors"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_28", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Utah Jazz"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_29", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          ),
-                                          tags$tr(style = "height: 25px",
-                                                  tags$td(align = "center", valign = "top",
-                                                          "Washington Wizards"),
-                                                  tags$td(colspan = 5,
-                                                          radioButtons(inputId = "Team_30", label = NULL, inline = TRUE, width = '400px',
-                                                                       choiceNames = list("", "", "", "", ""),
-                                                                       choiceValues = list(4, 3, 2, 1, 0),
-                                                                       selected = 1)
-                                                  )
-                                          )
-                                          )
-                                        )
-                             ),
-                    tags$div(style = "float: left",
-                             tags$p(tags$u(tags$strong("Frequency Options")),
-                                    tags$br(),
-                                    tags$strong("Always: "), "This is my team. I want to watch literally every single one of their games within my day/time restrictions. (Select no more than one \"Always\" team.)",
-                                    tags$br(),
-                                    tags$strong("Often: "), "This is one of my favorite teams. I want to watch them a lot.",
-                                    tags$br(),
-                                    tags$strong("Sometimes: "), "I don't mind watching this team every once and a while.",
-                                    tags$br(),
-                                    tags$strong("At Least Once: "), "I don't like watching this team, but I need to take my medicine and watch them at least once.",
-                                    tags$br(),
-                                    tags$strong("Never: "), "I never want to watch this team. Ever. Don't ask.")
-                    )
-                    )
-           ),
-  tags$div(
-    style="float: left;clear:both;",
-    div(style="display:inline-block",
-        actionButton(inputId = "Action", label = "Build my schedule",
-                     style="color: #fff; background-color: #337ab7; border-color: #2e6da4")
-        ),
-    div(style="display:inline-block",
-        uiOutput("download_button"),
-        tags$head(tags$style(".butt{background-color:#337ab7;} .butt{color: white;} .butt{border-color: #2e6da4;}"))
-        ),
-    conditionalPanel(condition="$('html').hasClass('shiny-busy')",
-                     tags$div("Creating your schedule. This will take a few seconds...", id = "loadmessage"))
-    ),
-  tags$div(
-    style = "float:left; clear: both; width: 1200px",
-    tags$div(
-      style = "float:left; width: 700px",
-      tableOutput(
-        outputId = "Result"
-        )
-    ),
-    tags$div(
-      style = "float: right; width: 500px",
-      tableOutput(
-        outputId = "Recap"
+  tabsetPanel( id = "tabs",
+    tabPanel(
+      "When do you watch hoops?",
+      tags$table(style = "table-layout: fixed; width: 500px;text-align: left; vertical-align: middle;",
+                 tags$style(HTML(".radio-inline {padding-left: 47px;margin-right: 20px;vertical-align: top}")),
+                 tags$tbody(
+                   tags$tr(
+                     tags$th(style = "width: 100px; text-align: center",
+                             "Day"),
+                     tags$th(style = "width: 75px;",
+                             "Include"),
+                     tags$th(style = "width: 135px;",
+                             "Earliest Start Time"),
+                     tags$th(style = "width: 135px;",
+                             "Latest Start Time"),
+                     tags$th(style = "width: 100px;",
+                             "Max Games")
+                   ),
+                   tags$tr(
+                     tags$td("Sunday", align = "center"),
+                     tags$td(
+                       style = "display: inline-block; margin-left: 15px;",
+                       checkboxInput(inputId = "Day_1", label = NULL, width = "15px", value = TRUE)
+                     ),
+                     tags$td(
+                       selectInput(inputId = "Early_1", label = NULL, width = "130px",
+                                   choices = time_list, selected = "12:00 pm ET")
+                     ),
+                     tags$td(
+                       selectInput(inputId = "Late_1", label = NULL, width = "130px",
+                                   choices = time_list, selected = "10:30 pm ET")
+                     ),
+                     tags$td(
+                       numericInput(inputId = "Max_1", label = NULL, width = "65px",
+                                    value = 1, min = 0, max = 5, step = 1)
+                     )
+                   ),
+                   tags$tr(
+                     tags$td("Monday", align = "center"),
+                     tags$td(
+                       style = "display: inline-block; margin-left: 15px;",
+                       checkboxInput(inputId = "Day_2", label = NULL, width = "15px", value = TRUE)
+                     ),
+                     tags$td(
+                       selectInput(inputId = "Early_2", label = NULL, width = "130px",
+                                   choices = time_list, selected = "6:00 pm ET")
+                     ),
+                     tags$td(
+                       selectInput(inputId = "Late_2", label = NULL, width = "130px",
+                                   choices = time_list, selected = "10:30 pm ET")
+                     ),
+                     tags$td(
+                       numericInput(inputId = "Max_2", label = NULL, width = "65px",
+                                    value = 1, min = 0, max = 5, step = 1)
+                     )
+                   ),
+                   tags$tr(
+                     tags$td("Tuesday", align = "center"),
+                     tags$td(
+                       style = "display: inline-block; margin-left: 15px;",
+                       checkboxInput(inputId = "Day_3", label = NULL, width = "15px", value = TRUE)
+                     ),
+                     tags$td(
+                       selectInput(inputId = "Early_3", label = NULL, width = "130px",
+                                   choices = time_list, selected = "6:00 pm ET")
+                     ),
+                     tags$td(
+                       selectInput(inputId = "Late_3", label = NULL, width = "130px",
+                                   choices = time_list, selected = "10:30 pm ET")
+                     ),
+                     tags$td(
+                       numericInput(inputId = "Max_3", label = NULL, width = "65px",
+                                    value = 1, min = 0, max = 5, step = 1)
+                     )
+                   ),
+                   tags$tr(
+                     tags$td("Wednesday", align = "center"),
+                     tags$td(
+                       style = "display: inline-block; margin-left: 15px;",
+                       checkboxInput(inputId = "Day_4", label = NULL, width = "15px", value = TRUE)
+                     ),
+                     tags$td(
+                       selectInput(inputId = "Early_4", label = NULL, width = "130px",
+                                   choices = time_list, selected = "6:00 pm ET")
+                     ),
+                     tags$td(
+                       selectInput(inputId = "Late_4", label = NULL, width = "130px",
+                                   choices = time_list, selected = "10:30 pm ET")
+                     ),
+                     tags$td(
+                       numericInput(inputId = "Max_4", label = NULL, width = "65px",
+                                    value = 1, min = 0, max = 5, step = 1)
+                     )
+                   ),
+                   tags$tr(
+                     tags$td("Thursday", align = "center"),
+                     tags$td(
+                       style = "display: inline-block; margin-left: 15px;",
+                       checkboxInput(inputId = "Day_5", label = NULL, width = "15px", value = TRUE)
+                     ),
+                     tags$td(
+                       selectInput(inputId = "Early_5", label = NULL, width = "130px",
+                                   choices = time_list, selected = "6:00 pm ET")
+                     ),
+                     tags$td(
+                       selectInput(inputId = "Late_5", label = NULL, width = "130px",
+                                   choices = time_list, selected = "10:30 pm ET")
+                     ),
+                     tags$td(
+                       numericInput(inputId = "Max_5", label = NULL, width = "65px",
+                                    value = 1, min = 0, max = 5, step = 1)
+                     )
+                   ),
+                   tags$tr(
+                     tags$td("Friday", align = "center"),
+                     tags$td(
+                       style = "display: inline-block; margin-left: 15px;",
+                       checkboxInput(inputId = "Day_6", label = NULL, width = "15px", value = TRUE)
+                     ),
+                     tags$td(
+                       selectInput(inputId = "Early_6", label = NULL, width = "130px",
+                                   choices = time_list, selected = "6:00 pm ET")
+                     ),
+                     tags$td(
+                       selectInput(inputId = "Late_6", label = NULL, width = "130px",
+                                   choices = time_list, selected = "10:30 pm ET")
+                     ),
+                     tags$td(
+                       numericInput(inputId = "Max_6", label = NULL, width = "65px",
+                                    value = 1, min = 0, max = 5, step = 1)
+                     )
+                   ),
+                   tags$tr(
+                     tags$td("Saturday", align = "center"),
+                     tags$td(
+                       style = "display: inline-block; margin-left: 15px;",
+                       checkboxInput(inputId = "Day_7", label = NULL, width = "15px", value = TRUE)
+                     ),
+                     tags$td(
+                       selectInput(inputId = "Early_7", label = NULL, width = "130px",
+                                   choices = time_list, selected = "12:00 pm ET")
+                     ),
+                     tags$td(
+                       selectInput(inputId = "Late_7", label = NULL, width = "130px",
+                                   choices = time_list, selected = "10:30 pm ET")
+                     ),
+                     tags$td(
+                       numericInput(inputId = "Max_7", label = NULL, width = "65px",
+                                    value = 1, min = 0, max = 5, step = 1)
+                     )
+                   )
+                 )
       )
-    )
+      ),
+      tabPanel(
+        "Any channel restrictions?",
+        tags$table(style = "table-layout: fixed; width: 250px;text-align: left; vertical-align: middle;",
+                   tags$tbody(
+                     tags$tr(
+                       tags$td(style = "width = 175px",
+                               "No ABC"),
+                       tags$td(style = "width = 75px",
+                               checkboxInput(inputId = "ABC", label = NULL, width = "15px")
+                       )
+                     ),
+                     tags$tr(
+                       tags$td("No ESPN"),
+                       tags$td(
+                         checkboxInput(inputId = "ESPN", label = NULL, width = "15px")
+                       )
+                     ),
+                     tags$tr(
+                       tags$td("No TNT"),
+                       tags$td(
+                         checkboxInput(inputId = "TNT", label = NULL, width = "15px")
+                       )
+                     ),
+                     tags$tr(
+                       tags$td("No NBA TV"),
+                       tags$td(
+                         checkboxInput(inputId = "NBA_TV", label = NULL, width = "15px")
+                       )
+                     ),
+                     tags$tr(
+                       tags$td("No League Pass"),
+                       tags$td(
+                         checkboxInput(inputId = "LP", label = NULL, width = "15px")
+                       )
+                     )
+                   )
+        ),
+        textOutput(outputId = "No_LP")
+      ),
+      tabPanel(
+        "How often do you want to watch each team?",
+        tags$div(style = 'float: left; width: 1200px; overflow: auto',
+                 tags$div(style = 'float: left; width: 600px;',
+        tags$table(style = "table-layout: fixed; width: 400px; text-align: left; vertical-align: top;",
+                   tags$style(HTML(".radio-inline {padding-left: 47px;margin-right: 20px;vertical-align: top}")),
+                   tags$tbody(
+                     tags$tr(style = "height: 25px",
+                             tags$th(style = "width: 200px; text-align: center; vertical-align: middle;",
+                                     "Team"),
+                             tags$th(style = "width: 80px; text-align: center; vertical-align: middle;",
+                                     "Always"),
+                             tags$th(style = "width: 80px; text-align: center; vertical-align: middle;",
+                                     "Often"),
+                             tags$th(style = "width: 80px; text-align: center; vertical-align: middle;",
+                                     "Sometimes"),
+                             tags$th(style = "width: 80px; text-align: center; vertical-align: middle;",
+                                     "At Least Once"),
+                             tags$th(style = "width: 80px; text-align: center; vertical-align: middle;",
+                                     "Never")
+                     ),
+                     tags$tr(style = "height: 10px",
+                             tags$td(align = "center", valign = "top",
+                                     "Atlanta Hawks"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_1", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "Boston Celtics"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_2", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "Brooklyn Nets"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_3", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "Charlotte Hornets"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_4", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "Chicago Bulls"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_5", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "Cleveland Cavaliers"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_6", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "Dallas Mavericks"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_7", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "Denver Nuggets"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_8", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "Detroit Pistons"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_9", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "Golden State Warriors"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_10", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "Houston Rockets"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_11", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "Indiana Pacers"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_12", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "Los Angeles Clippers"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_13", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "Los Angeles Lakers"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_14", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "Memphis Grizzlies"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_15", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "Miami Heat"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_16", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "Milwaukee Bucks"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_17", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "Minnesota Timberwolves"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_18", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "New Orleans Pelicans"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_19", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "New York Knicks"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_20", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "Oklahoma City Thunder"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_21", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "Orlando Magic"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_22", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "Philadelphia 76ers"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_23", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "Phoenix Suns"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_24", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "Portland Trail Blazers"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_25", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "Sacramento Kings"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_26", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "San Antonio Spurs"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_27", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "Toronto Raptors"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_28", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "Utah Jazz"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_29", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     ),
+                     tags$tr(style = "height: 25px",
+                             tags$td(align = "center", valign = "top",
+                                     "Washington Wizards"),
+                             tags$td(colspan = 5,
+                                     radioButtons(inputId = "Team_30", label = NULL, inline = TRUE, width = '400px',
+                                                  choiceNames = list("", "", "", "", ""),
+                                                  choiceValues = list(4, 3, 2, 1, 0),
+                                                  selected = 1)
+                             )
+                     )
+                   )
+        )
+        ),
+        #Object 2
+        tags$div(style = 'float: left; width: 600px;',
+          tags$p(tags$u(tags$strong("Frequency Options")),
+                 tags$br(),
+                 tags$strong("Always: "), "This is my team. I want to watch literally every single one of their games within my day/time restrictions. (Select no more than one \"Always\" team.)",
+                 tags$br(),
+                 tags$strong("Often: "), "This is one of my favorite teams. I want to watch them a lot.",
+                 tags$br(),
+                 tags$strong("Sometimes: "), "I don't mind watching this team every once and a while.",
+                 tags$br(),
+                 tags$strong("At Least Once: "), "I don't like watching this team, but I need to take my medicine and watch them at least once.",
+                 tags$br(),
+                 tags$strong("Never: "), "I never want to watch this team. Ever. Don't ask."),
+          actionButton(inputId = "Action", label = "Build my schedule",
+                       style="color: #fff; background-color: #337ab7; border-color: #2e6da4")
+        )
+)
+      )
   )
-  
+
 )
 
 
 #### SERVER ####
 
-server <- function(input, output) {
+server <- function(input, output, session) {
   
+
   output$No_LP <- renderText({
     if(input$LP){
       LP_message <- "Note: This schedule maker isn't very useful without a League Pass subscription."
@@ -819,6 +778,7 @@ server <- function(input, output) {
         mutate(DATE = as.character(DATE)) %>%
         select(DATE, TIME, AWAY, HOME, TV)
         
+
       
       if (lp_model$status == 0) {
           final_result
@@ -875,6 +835,46 @@ server <- function(input, output) {
     caption.placement = getOption("xtable.caption.placement", "top")
     )
 
+
+    
+    
+    observeEvent(input$Action, {
+      
+      removeTab(inputId = "tabs", target = "Your Schedule")
+      
+      appendTab(inputId = "tabs",
+                tabPanel("Your Schedule",
+                         conditionalPanel(condition="$('html').hasClass('shiny-busy')",
+                                          tags$div("Creating your schedule. This will take a few seconds...", id = "loadmessage")),
+                         splitLayout(cellWidths = c("700px", "300px"),
+                               tableOutput(
+                                 outputId = "Result"
+                               ),
+                               uiOutput("download_button"),
+                               tags$head(tags$style(".butt{background-color:#337ab7;} .butt{color: white;} .butt{border-color: #2e6da4;}"))
+                         )
+                         
+                )
+      )
+      
+      updateTabsetPanel(session = session, inputId = "tabs", selected = "Your Schedule")
+    })
+    
+    observeEvent(input$Action, {
+      
+      removeTab(inputId = "tabs", target = "Breakdown by Team")
+      
+      appendTab(inputId = "tabs",
+                tabPanel("Breakdown by Team",
+                         tableOutput(
+                           outputId = "Recap"
+                         )
+                )
+      )
+    })
+
+    
+    
     output$downloadData <- downloadHandler(
       
       filename = "schedule.csv",
