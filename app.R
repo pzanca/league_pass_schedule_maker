@@ -8,7 +8,11 @@ library(lpSolve)
 # Load files
 
 #Read in the NBA schedule
-nba_schedule <- read_csv("NBA_Schedule_Final.csv")
+nba_schedule <- read_csv("NBA_Schedule_Final.csv") %>%
+  mutate(DATE = mdy(DATE))
+
+#Randomly order
+nba_schedule <- nba_schedule[sample(nrow(nba_schedule)), ]
 
 #Import timeslot matrix
 timeslots <- read_csv("Timeslots.csv")
@@ -33,7 +37,7 @@ ui <- fluidPage(
   tags$h5("Built by Peter Zanca"),
   tags$p("Every season, I tell myself I'm going to get my money's worth out of NBA League Pass and watch every team in the league on a regular basis. But after a week or two, I always end up coming back to my favorites over and over again. This year I'm using linear programming to plan out an optimal schedule of games that'll allow me to watch the teams I like while also forcing me to take my medicine on teams I'm less likely to watch."),
   tags$p("This Shiny app will allow you to build your own \"optimal\" schedule. Just plug in (A) when you watch games, (B) how many you watch on a given day, (C) what channels you're limited to, and (D) how often you want to watch each team. Happy viewing!"),
-  tabsetPanel( id = "tabs",
+    tabsetPanel( id = "tabs",
     tabPanel(
       "When do you watch hoops?",
       tags$table(style = "table-layout: fixed; width: 500px;text-align: left; vertical-align: middle;",
@@ -612,11 +616,11 @@ server <- function(input, output, session) {
       
       #Set up unavailable channels
       channels <- tibble(
-        CHANNEL = c("ABC", "ESPN", "TNT", "NBA TV", "LP"),
+        TV = c("ABC", "ESPN", "TNT", "NBA TV", "League Pass"),
         UNAVAIL = c(input$ABC, input$ESPN, input$TNT, input$NBA_TV, input$LP)
         ) %>%
         filter(!UNAVAIL) %>%
-        select(CHANNEL)
+        select(TV)
       
       #Set up team preferences
       team_pref <- tibble(
@@ -640,9 +644,10 @@ server <- function(input, output, session) {
       elig_games <- nba_schedule %>%
         #Filter to games starting today
         filter(DATE >= Sys.Date()) %>%
+        #Filter out postponed games
+        filter(POSTPONED == 0) %>%
         #Filter to games on available channels
-        mutate(CHANNEL = if_else(is.na(NATL_TV), "LP", NATL_TV)) %>%
-        inner_join(channels, by = "CHANNEL") %>%
+        inner_join(channels, by = "TV") %>%
         #Filter on day
         inner_join(day_pref %>%
                      filter(INCLUDE) %>%
@@ -677,7 +682,7 @@ server <- function(input, output, session) {
         mutate(GAME_VALUE = AWAY_VALUE + HOME_VALUE,
                MUST_WATCH = if_else(AWAY_VALUE == 4 | HOME_VALUE == 4, 1, 0)) %>%
         #Narrow down the columns to what's needed going forward
-        select(GAME_ID, WEEKDAY, DATE, TIME, AWAY, HOME, LOCAL_TV_1, LOCAL_TV_2, NATL_TV, GAME_VALUE, MUST_WATCH)
+        select(GAME_ID, WEEKDAY, DATE, TIME, AWAY, HOME, TV, GAME_VALUE, MUST_WATCH)
       
       #Extract coefficients
       lp_coef <- elig_games %>%
@@ -779,7 +784,6 @@ server <- function(input, output, session) {
       final_result <- elig_games %>%
         mutate(INCLUDE = lp_model$solution) %>%
         filter(INCLUDE == 1) %>%
-        mutate(TV = if_else(is.na(NATL_TV), "League Pass", NATL_TV)) %>%
         mutate(DATE = as.character(DATE)) %>%
         select(DATE, TIME, AWAY, HOME, TV)
         
